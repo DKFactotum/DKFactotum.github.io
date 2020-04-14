@@ -1,24 +1,24 @@
 # Site settings
-title:                Daniil Portfolio
-email:                daniil.koshelyuk@gmail.com
-description:          >
+title:                 Daniil Portfolio
+email:                 daniil.koshelyuk@gmail.com
+description:           >
   This is a personal portfolio site of architect, designer and programmer
   Daniil Koshelyuk. I hope you will find it informative and of use.
-# baseurl:            "daniil.koshelyuk.site" # the subpath of your site, e.g. /blog
-url:                  daniil.koshelyuk.site # the base hostname & protocol for your site
+# baseurl:             "daniil.koshelyuk.site" # the subpath of your site, e.g. /blog
+url:                   daniil.koshelyuk.site # the base hostname & protocol for your site
 
 # Build settings
-markdown:             kramdown
+markdown:              kramdown
 
 sass:
-  sass_dir:           "code/_sass"
+  sass_dir:            "code/_sass"
 
-include:              [
+include:               [
   "_data",
   "CNAME"
 ]
 
-exclude:              [
+exclude:               [
   "node_modules",
   "gulpfile.js",
   "package.json",
@@ -28,12 +28,12 @@ exclude:              [
 ]
 
 # Git Hub Static Site Generator requirements
-lsi:                  false
-safe:                 true
-incremental:          false
-highlighter:          rouge
+lsi:                   false
+safe:                  true
+incremental:           false
+highlighter:           rouge
 gist:
-  noscript:           false
+  noscript:            false
 kramdown:
-  math_engine:        mathjax
-  syntax_highlighter: rouge
+  math_engine:         mathjax
+  syntax_highlighter:  rouge
