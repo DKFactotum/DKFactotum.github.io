@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest 
+    runs-on: windows-latest
     steps:
       - name: test
         run: echo Hello, world!
@@ -24,6 +24,9 @@ jobs:
         
 #       - name: install jekyll
 #         run: gem install jekyll
+
+      - name: check cache
+        run: npm cache clean --force
       
       - name: install gulp-cli
         run: npm install gulp-cli
