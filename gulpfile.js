@@ -25,7 +25,7 @@ const jsFiles_s    = ['./code/_js/*.js'];
 const jsFiles_o    = 'code/js';
 const jsScriptFile = 'scripts.js';
 const dataFiles    = '_data/**/*.yml';
-const deployFolder =  "./_deploySite/**/*"
+const deployFolder =  "./_site/**/*"
 
 const messages = {
   jekyllDev: 'Running: $ jekyll build for dev',
@@ -142,13 +142,13 @@ gulp.task('watch', function watch() {
   gulp.watch(dataFiles, gulp.series('jekyll-rebuild'));
 });
 
-gulp.task('deploy', gulp.series('build', function deploy() {
-  return gulp.src(deployFolder)
-    .pipe(ghdeploy())
-}));
-
 ////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('default', gulp.series('browser-sync', 'watch'));
 
 gulp.task('build', gulp.series('scripts-prod', 'sass-prod', 'pug-prod', 'jekyll-prod'));
+
+gulp.task('deploy', gulp.series('build', function deploy() {
+  return gulp.src(deployFolder)
+    .pipe(ghdeploy())
+}));
