@@ -3,12 +3,9 @@
 !.gitignore
 !CNAME
 _work/
-_deploySite/
 
 ### Node JS ###
 node_modules/
-_site/
-
 
 ### Jekyll ###
 .jekyll-metadata
