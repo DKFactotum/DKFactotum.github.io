@@ -10,6 +10,7 @@ const prettify     = require('gulp-prettify');
 const concat       = require('gulp-concat');
 const cssnano      = require('gulp-cssnano');
 const uglify       = require('gulp-uglify');
+const ghdeploy     = require('gulp-gh-pages');
 const log          = require('fancy-log');
 
 const siteRoot     = './_site';
@@ -24,6 +25,7 @@ const jsFiles_s    = ['./code/_js/*.js'];
 const jsFiles_o    = 'code/js';
 const jsScriptFile = 'scripts.js';
 const dataFiles    = '_data/**/*.yml';
+const deployFolder =  "./_deploySite/**/*"
 
 const messages = {
   jekyllDev: 'Running: $ jekyll build for dev',
@@ -139,6 +141,11 @@ gulp.task('watch', function watch() {
   gulp.watch(htmlFiles, gulp.series('jekyll-rebuild'));
   gulp.watch(dataFiles, gulp.series('jekyll-rebuild'));
 });
+
+gulp.task('deploy', gulp.series('build', function deploy() {
+  return gulp.src(deployFolder)
+    .pipe(ghdeploy())
+}));
 
 ////////////////////////////////////////////////////////////////////////////////
 
