@@ -3,11 +3,10 @@
 !.gitignore
 !CNAME
 _work/
-_deploySite/
+_site/
 
 ### Node JS ###
 node_modules/
-_site/
 
 
 ### Jekyll ###
