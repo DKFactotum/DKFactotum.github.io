@@ -1,9 +1,17 @@
 # Created by https://www.gitignore.io/api/jekyll,sass,windows
 
-!.gitignore
+.gitignore
 !CNAME
 _work/
-_site/
+
+
+### auto generated files
+_includes/4-pages/
+code/css/
+code/js/
+
+code/
+_includes/
 
 ### Node JS ###
 node_modules/
