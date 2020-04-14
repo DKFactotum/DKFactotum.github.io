@@ -3,7 +3,7 @@
 !.gitignore
 !CNAME
 _work/
-_site/
+#_site/
 
 ### auto generated files
 _includes/
