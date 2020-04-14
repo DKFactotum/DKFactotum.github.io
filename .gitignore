@@ -2,7 +2,8 @@
 
 !.gitignore
 !CNAME
-_work
+_work/
+_deploySite/
 
 ### Node JS ###
 node_modules/
