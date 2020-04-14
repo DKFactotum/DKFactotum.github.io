@@ -28,11 +28,11 @@ jobs:
       - name: check cache
         run: npm cache clean --force
       
-      - name: install gulp-cli
-        run: npm install --global gulp-cli
+#       - name: install gulp-cli
+#         run: npm install --global gulp-cli
       
-      - name: install gulp
-        run: npm install gulp
+#       - name: install gulp
+#         run: npm install gulp
           
       - name: install dependencies
         run: npm install
