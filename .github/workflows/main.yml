@@ -17,7 +17,7 @@ jobs:
         uses:    actions/checkout@v2
 
       - name:    install node
-        uses:    actions/setup-node@v1.4.1
+        uses:    actions/setup-node@v6.14.4
 
       # - name:  install ruby
       #   uses:  actions/setup-ruby@v1.0.0
