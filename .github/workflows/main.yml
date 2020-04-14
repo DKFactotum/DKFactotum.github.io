@@ -16,8 +16,9 @@ jobs:
       - uses: actions/setup-ruby@v1.0.0
       - run: |
           gem install jekyll
-          npm install
+          npm install --global gulp-cli
           npm install gulp
+          npm install
           gulp build
           
 #     # Steps represent a sequence of tasks that will be executed as part of the job
