@@ -19,6 +19,7 @@ include:               [
 ]
 
 exclude:               [
+  "code/css/*.scss",
   "node_modules",
   "gulpfile.js",
   "package.json",

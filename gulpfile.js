@@ -15,17 +15,17 @@ const log          = require('fancy-log');
 
 const siteRoot     = './_site';
 const pugFiles_s   = './code/_pug/**/*.pug';
-const pugFiles_o   = '_includes';
-const htmlFiles    = ['./index.html', './_layouts/*.html','./sources/*.html', './_includes/*'];
-const sassFiles_s  = ['./code/_sass/*','code/_sass/**/*'];
+const pugFiles_o   = '_includes/';
+const htmlFiles    = ['./*.html', './_layouts/*.html','./_includes/**/*'];
 const sassFolder   = './code/_sass';
-const cssFiles_s   = ['./code/css/*.scss'];
+const sassFiles_s  = './code/_sass/*';
+const cssFiles_s   = './code/_scss/*.scss';
 const cssFiles_o   = 'code/css';
-const jsFiles_s    = ['./code/_js/*.js'];
+const jsFiles_s    = './code/_js/*.js';
 const jsFiles_o    = 'code/js';
 const jsScriptFile = 'scripts.js';
 const dataFiles    = '_data/**/*.yml';
-const deployFolder =  "./_site/**/*"
+// const deployFolder =  "./_site/**/*"
 
 const messages = {
   jekyllDev: 'Running: $ jekyll build for dev',
@@ -41,9 +41,9 @@ gulp.task('sass', function sassDev() {
       onError:      browserSync.notify
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    .pipe(gulp.dest(siteRoot+'/'+cssFiles_o))
+    .pipe(gulp.dest('./'+cssFiles_o))
     .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('./'+cssFiles_o));
+    ;
 });
 
 gulp.task('sass-prod', function sassProd() {
@@ -54,8 +54,8 @@ gulp.task('sass-prod', function sassProd() {
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(cssnano())
-    .pipe(gulp.dest(siteRoot+'/'+cssFiles_o))
-    .pipe(gulp.dest('./'+cssFiles_o));
+    .pipe(gulp.dest('./'+cssFiles_o))
+    ;
 });
 
 //
@@ -63,17 +63,17 @@ gulp.task('sass-prod', function sassProd() {
 gulp.task('scripts', function scriptsDev() {
   return gulp.src(jsFiles_s)
     .pipe(concat(jsScriptFile))
-    .pipe(gulp.dest(siteRoot+'/'+jsFiles_o))
+    .pipe(gulp.dest('./'+jsFiles_o))
     .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('./'+jsFiles_o));
+    ;
 });
 
 gulp.task('scripts-prod', function scriptsProd() {
   return gulp.src(jsFiles_s)
     .pipe(concat(jsScriptFile))
     .pipe(uglify())
-    .pipe(gulp.dest(siteRoot+'/'+jsFiles_o))
-    .pipe(gulp.dest('./'+jsFiles_o));
+    .pipe(gulp.dest('./'+jsFiles_o))
+    ;
 });
 
 //
@@ -96,6 +96,7 @@ gulp.task('pug-prod', function pugProd() {
 gulp.task('jekyll-dev', function jekyllDev(done) {
   browserSync.notify(messages.jekyllDev);
   cp.spawn('jekyll.bat', ['build',
+                        '--trace',
                         '--drafts',
                         '--config',
                         '_config.yml'], {stdio: 'inherit'});
@@ -122,7 +123,7 @@ gulp.task('jekyll-rebuild', gulp.series('jekyll-dev', function jekyllRebuild() {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('browser-sync', gulp.series('sass', 'scripts', 'pug', 'jekyll-dev', function sync() {
+gulp.task('browser-sync', gulp.series(gulp.parallel('pug', 'sass', 'scripts'), 'jekyll-dev', function sync() {
   browserSync.init({
     files: siteRoot+'/**',
     port: 4000,
@@ -146,9 +147,9 @@ gulp.task('watch', function watch() {
 
 gulp.task('default', gulp.series('browser-sync', 'watch'));
 
-gulp.task('build', gulp.series('scripts-prod', 'sass-prod', 'pug-prod', 'jekyll-prod'));
+gulp.task('build', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod'));
 
-gulp.task('deploy', gulp.series('build', function deploy() {
-  return gulp.src(deployFolder)
-    .pipe(ghdeploy())
-}));
+// gulp.task('deploy', gulp.series('build', function deploy() {
+//   return gulp.src(deployFolder)
+//     .pipe(ghdeploy())
+// }));
