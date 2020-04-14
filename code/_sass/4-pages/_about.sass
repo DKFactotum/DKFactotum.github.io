@@ -1,0 +1,88 @@
+.contents#about
+  .content-wrapper
+    width: 900px                           // page size
+    @include media-query(1000px)
+      width: 65vmin
+    @include media-query(450px)
+      width: 100vmin
+    @include media-query-horisontal(1050px)
+      width: 80vmin
+    margin: auto
+    position: relative
+    z-index: 1
+
+section#about
+  display: none
+  &.lang-active
+    display: block
+  .wrapper
+    position: absolute
+    background: $background-color
+    // color: $base-text-color
+    box-shadow: 0 0 30vmin 15vmin lighten($base-text-color,75)
+
+    .about-content
+      position: absolute
+      padding: 1vw
+      height: calc(100% - 2vw)
+      width: calc(100% - 2vw)
+
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      .about-element
+        display: block
+        padding-bottom: auto
+      .about-intro
+        h2
+          padding-bottom: 2%
+        .about-av
+          position: relative
+          float: right
+          +size(275px)
+          @include media-query(900px)
+            +size(25vmin)
+          @include media-query-horisontal(900px)
+            +size(25vmin)
+          margin-left: 1vw
+          margin-bottom: 0.5vw
+          img
+            height: 100%
+            width: 100%
+            position: absolute
+            object-fit: cover
+      .about-invitations
+        a.link
+          display: block
+          padding: 1vw
+          text-align: center
+          font-size: 35px
+          @include media-query(900px)
+            font-size: $med-about-font-size
+          @include media-query-horisontal(830px)
+            font-size: $med-about-font-size
+
+  p, a
+    color: $base-text-color
+    font-size: 20px
+    @include media-query(900px)
+      font-size: $base-about-font-size
+    @include media-query-horisontal(830px)
+      font-size: $base-about-font-size
+    text-align: left
+
+  a
+    color: $anchor-color
+
+  ul
+    list-style-type: none
+    text-align: center
+    width: 100%
+    display: flex
+    flex-direction: row
+  ul > li
+    float: left
+    padding: 1vw
+    margin-left: auto
+    margin-right: auto

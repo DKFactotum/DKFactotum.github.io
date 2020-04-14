@@ -1,0 +1,56 @@
+// General variables
+$background-color: #ffffff;
+$spacing-unit:     30px;
+$content-width:    75vmin;
+
+// Text variables
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-style:  normal;
+$base-font-weight: 300;
+$base-line-height: 1;
+$base-font-size:   calc(0.6vmin + 8px);
+$med-font-size:    calc(1.2vmin + 8px);
+$base-about-font-size:   calc(1.4vmin + 4px);
+$med-about-font-size:    calc(2vmin + 5px);
+$big-font-size:    calc(1.8vmin + 8px);
+$extra-font-size:  calc(3vmin + 21px);
+$extra-mob-font-size:  calc(2vmin + 10px);
+$info-big-font-size:  calc(4vmin + 17px);
+$info-small-font-size:  calc(2vmin + 6px);
+$base-text-color:  #111111;
+$anchor-color:     #666666;
+
+// My variables
+$perspectivedepth: 400px;
+$thumbRelativeSize:80%;
+$thumbRelativeSizeHover:$thumbRelativeSize*1.4;
+$thumbRelativeSizeHoverMobile:$thumbRelativeSize*0.8;
+$thumbRelativeOffsetHover: 50%;
+$thumbRelativeOffsetHoverMobile: -40%;
+
+// $side-color-1:     #7f7f7f;
+// $side-color-2:     #bfbfbf;
+
+$difference:          150px;
+$outline-position-10: -350px;
+$outline-position-11: $outline-position-10 - 2*$difference;
+$outline-position-12: $outline-position-10 - $difference;
+
+$outline-position-13: 350px;
+$outline-position-14: $outline-position-13 + $difference;
+$outline-position-15: $outline-position-13 + 2*$difference;
+
+$animation-speed:     500ms;
+
+$on-palm:          500px;
+$on-tablet:        650px;
+$on-laptop:        800px;
+
+$p-type-1-color:   #ef4222;
+$p-type-2-color:   #faa718;
+$p-type-3-color:   #8dc73e;
+$p-type-4-color:   #17bab0;
+$p-type-5-color:   #3a409a;
+$p-type-6-color:   #b456e5;
+
+$depth:           -10000px;

@@ -1,0 +1,80 @@
+// Home page with project matrix styles
+section#home, section#project-1, section#project-2, section#project-3, section#project-4, section#project-5
+  display: none
+  &.lang-active
+    display: block
+  // projects container
+  .wrapper
+    position: absolute
+    z-index: 4
+    +perspective($perspectivedepth)
+    perspective-origin: 50% 50%
+    +transform-style(preserve-3d)
+
+    a.cube-container, .cube-placeholder
+      position: absolute                  //
+      width: 33.3333%                     // project thumb container size
+      @include animation()
+      &:after
+        content: ''
+        display: block
+        padding-top: 100%                 // thumb size (reacting to the width)
+      @include positioning-boxes()
+
+      .box
+        position: absolute
+        @include animation()
+        +size($thumbRelativeSize)
+        @include positioning-elements()
+        @include formatting-elements()
+        @include formatting-sides()
+
+        .side-face
+          z-index: 4
+          position: absolute
+          overflow: hidden
+          .content
+            .thumb
+              position: absolute                //
+              +size(100%)
+              max-width: 100%
+              max-height: 100%
+            .overlay
+              position: absolute                //
+              +size(100%)
+              @include opaque-colors()
+            .title
+              position: absolute                //
+              color: $background-color
+              font-size: $extra-font-size
+
+              opacity: 0
+              margin: -.7vmin 0 0 -.4vmin
+              @include media-query($on-palm)
+                opacity: 1
+                font-size: $extra-mob-font-size
+              @include media-query-horisontal($on-tablet)
+                opacity: 1
+                font-size: $extra-mob-font-size
+
+    .cube-10, .cube-11,.cube-12,.cube-13,.cube-14,.cube-15
+      cursor: default
+      pointer-events: none
+
+      //
+      // .sides
+      //   .content
+      //     .title
+      //       opacity: 1
+
+    a:hover
+      .box.cube-1, .box.cube-2,.box.cube-3,.box.cube-4,.box.cube-5,.box.cube-6,.box.cube-7,.box.cube-8,.box.cube-9
+        +size($thumbRelativeSizeHover)
+        @include hover-projects-positioning()
+        @include media-query($on-palm)
+          +size($thumbRelativeSizeHoverMobile)
+        .sides
+          .content
+            .title
+              opacity: 1
+              margin: -1.4vmin 0 0 -.8vmin

@@ -1,0 +1,47 @@
+include ../1-base/_mixins
+include ../3-modules/_header
+include ../3-modules/_footer
+
+mixin lang-section-about(lang)
+  section#about(class = "lang-section "+lang)
+    .wrapper
+      .about-content
+        .about-element.about-intro
+          h2.about-title
+            +pull-a(lang+".intro")
+          .about-av
+            img(src = "./_data/general/AV.png")
+          p
+            +pull-a(lang+".paragraph")
+        .about-element.about-download
+          p
+            +pull-a(lang+".employer-intro")
+          ul
+            li
+              a(href='./_data/general/DaniilKoshelyuk-CV.pdf') Curriculum Vitae
+            li
+              a(href='./_data/general/DaniilKoshelyuk-Portfolio-Mini.pdf') 4-page portfolio
+        .about-element.about-contact
+          p
+            +pull-a(lang+".social-intro")
+          ul
+            li
+              a(href='https://www.linkedin.com/in/DKFactotum/') LinkedIN
+            li
+              a(href='https://www.facebook.com/Daniil.Koshelyuk') Facebook
+            li
+              a(href='https://www.instagram.com/DKFactotum.photo') instagram
+            li
+              a(href='https://ru.pinterest.com/DaniilKosh/') Pinterest
+        .about-element.about-invitations
+          p
+            +pull-a(lang+".contact-intro")
+          a.link(href='mailto:Daniil.Koshelyuk@gmail.com') Daniil.Koshelyuk@gmail.com
+
+          
+.page-wrapper.load
+  .content-wrapper.load#about
+    +header
+    +lang-section-about("En")
+    +lang-section-about("Ru")
+    //- +footer

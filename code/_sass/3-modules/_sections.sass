@@ -1,0 +1,62 @@
+.is-hidden
+  display: none
+
+.lang-active
+  display: block
+
+section
+  z-index: 2
+  height: 100vh
+  width: 100%                           // page size
+  // overflow: hidden
+  .wrapper
+    position: relative                    // base point for project thumb container
+    left: 50%
+    top: 50%
+    +transform(translate(-50%, -50%))
+    width: 100%                           // page size
+    // max-height: 100%
+    transition: width 2s linear, height 2s linear
+    z-index: 1
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%                   // page size (reacting to the width)
+    &.content-wrapper
+      vertical-align: middle
+      min-height: 70%
+      text-align: center
+      &:after
+        padding: 0
+
+  .arrow_up
+    top: 10%
+    @include media-query($on-palm)
+      top: 15%
+  .arrow_down
+    top: 90%
+    @include media-query($on-palm)
+      top: 85%
+  .arrow_up, .arrow_down
+    left: 50%
+    +transform(translate(-50%, -50%))
+    width: 100%                           // page size
+    position: absolute
+    text-align: center
+    padding: 5% 0 5% 0
+    z-index: 1
+    &:hover
+      cursor: pointer
+    &.hidden
+      display: none
+    img
+      width: 5vh
+      height: 5vh
+  .arrow_up:hover
+    img
+      width: 7vh
+      height: 7vh
+  .arrow_down:hover
+    img
+      width: 7vh
+      height: 7vh

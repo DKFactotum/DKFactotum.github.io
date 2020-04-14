@@ -1,0 +1,100 @@
+//-home
+mixin cube-container-project(lang, i, pi)
+  - var pType = "{{ site.data.projects.project_list.project-"+pi+".type }}"
+  - var pLink = "{{ site.data.projects.project_list.project-"+pi+".link }}"
+  - var pThumb = "{{ site.data.projects.project_list.project-"+pi+".thumb-path }}"
+  - var pName = "{{ site.data.projects.project_list.project-"+pi+"."+lang+"-title }}"
+  +cube-matrix(i, pLink, pType, pThumb, pName)
+
+//-about
+mixin pull-a(info)
+  | {{ site.data.general.about.#{info} }}
+
+//-projects
+mixin cube-container-content(lang, i, pi, ci)
+  - var pType = "{{ site.data.projects.project_list.project-"+pi+".type }}"
+  - var cLink = "{{ site.data.projects.project_list.project-"+pi+".content.element"+ci+".link }}"
+  - var cName = "{{ site.data.projects.project_list.project-"+pi+".content.element"+ci+"."+lang+"-name }}"
+  - var cThumb = "{{ site.data.projects.project_list.project-"+pi+".content.element"+ci+".path }}"
+  +cube-matrix(i, cLink, pType, cThumb, cName)
+
+mixin cube-matrix(i, link, type, thumb, name)
+  a.cube-container(href=link, class = "cube-"+i)
+    .box(class = "cube-"+i)
+      //- .side-top.sides(class = "project-type-"+type)
+      //-   svg
+      //-     polygon(points = "0,0 100,0 120,-70 30,-70", stroke-width = 0, color = lime, style = fill)
+      //- .side-right.sides(class = "project-type-"+type)
+      //- .side-bottom.sides(class = "project-type-"+type)
+      //- .side-left.sides(class = "project-type-"+type)
+      .side-face.sides(class = "project-type-"+type)
+        .content
+          .thumb(style = 'background: url("'+thumb+'"); background-size: cover; background-repeat: no-repeat; background-position: center center;')
+          .overlay(class = "project-type-"+type)
+          .title
+            p!= name
+
+mixin cube-container-placeholder(i)
+  .cube-placeholder(class = "cube-"+i)
+
+//-slides
+mixin projectLength(projectNumber)
+  - var length = "{{ site.data.projects.project_list.project-"+projectNumber+".content-amount }}"
+  .projectlength.is-hidden(text=length)
+
+mixin pull-data(info)
+  | {{ site.data.projects.project_list.#{info} }}
+
+mixin sectionSlides(projectNumber, lang, elementNumber)
+  - var iLink = "{{ site.data.projects.project_list.project-"+projectNumber+".content.element"+elementNumber+".path-slide }}"
+  - var sLink = "{{ site.data.projects.project_list.project-"+projectNumber+".content.element"+elementNumber+".path-sm-slide }}"
+  - var pLink = "{{ site.data.projects.project_list.project-"+projectNumber+".overview }}"
+  .content-slides(class="slide"+elementNumber)
+    .image_container.container
+      img(class = "protection", src = "/_data/general/doNotDownload-PleaseAsk.png")
+      img(class = "lazy", src = sLink, data-src = iLink)
+    .detail_container
+      .data_container
+        .navigation_container.container
+          .description.button
+            a
+              .hide
+                img(class = "down", src="/_data/general/down-arrow.svg")
+              .show.hidden
+                img(class = "up", src="/_data/general/up-arrow.svg")
+          .full-window.button
+            a
+              img(class = "full", src="/_data/general/full.svg")
+          .project-overview.button
+            a(href=pLink)
+              img(class = "overview", src="/_data/general/overview.svg")
+        .description_container
+          p.description
+            +pull-data("project-"+projectNumber+".content.element"+elementNumber+"." + lang + ".description") 
+          p.name
+            +pull-data("project-"+projectNumber+".content.element"+elementNumber+"." + lang + "-name") 
+      .details-bg
+        img(src="/_data/general/details_BG.png")
+
+mixin loader()
+  .loader
+    .element.element1
+    .element.hidden
+    .element.element2
+    .element.hidden
+    .element.element3
+      
+mixin background-info(lang)
+  - var name = "{{ site.data.general.about."+lang+".name }}"
+  - var oneliner = "{{ site.data.general.about."+lang+".oneliner }}"
+  div(class="background-description lang-section "+lang)
+    .header
+      | #{name}
+    .quote
+      | #{oneliner}
+      
+mixin background-project-info(projectNumber, lang)
+  - var descrition = "{{ site.data.projects.project_list.project-"+projectNumber+"."+ lang +"-descript }}"
+  div(class="background-description lang-section "+lang)
+    .quote
+      | #{descrition}

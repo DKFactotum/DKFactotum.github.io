@@ -1,0 +1,78 @@
+ESSENTIAL:
+#DONE * remove links for current navigation
+#DONE * check up- and down- arrow set-up (project page bug)
+#DONE * lighten preview images (critical for mobile)
+#DONE * fix min height for description
+#DONE * catch swiping
+#DONE * display project names on mobile by default
+* make the text in greeting line change with time on the page
+#DONE * automate header navigation
+* clean through the code
+* write comments
+* ? increase animation time for mobile
+* create a step-by-step guide in readme
+
+LATER:
+#DONE * full screen mode add
+* ? add matrix background for project-overview page
+
+
+FEEDBACK:
+Gallery:
+#DONE -+ Default description on
+--+ ?autohide?
+- Buttons not very visible
+--+ Make a BG around them
+-+ First only?: Background Project Name, Type, Team or individual, Role, Duties, Achievements
+
+Global:
+- loading time
+#DONE --+ decrease file sizes for mobile
+--+ add loader animation
+--+ lazy loading
+- Android mobile Scroll issue
+-+ Back button?
+
+About Page:
+#DONE -+ Full screen proportions shrink
+#DONE - white text on grey not readable
+- ?Add non professional - personality: general interests in life, activities
+#DONE? - Too small font
+#DONE? - Text overlap
+
+Main Page:
+- Make immediately clear what is the site
+#DONE --+ Background name and one sentence (+in about)
+	example: My name is Tim de Graag and I am a young Dutch architect. I feel passionate about solid, clear and refined designs and I am committed to an analytic and collaborative approach, but mostly I enjoy the beauty that well-made buildings offer.
+- titles not readable
+#DONE?- titles rus check
+-+ greeting text changes
+- different sorting
+-+ add legend?
+
+Project Overview:
+#DONE? - Full screen on hover out of frame
+-+ Background Project Name, Type, Role, Duties, Achievements
+
+Main + Project:
+- on mobile: turn off hover
+- on mobile: ? no margin
+
+Text:
+#DONE? - replace me to Name - repeat and remember
+#DONE- CV: ML workshop month error
+#DONE- CV: nationality -> residence and citizenship
+- readability: �������� �� ��������������� ��������� ������...
+- timetable: results: rus shorten
+- mom museum text in mail
+
+?:
+- iphone: home not working
+- 90-00's site? - text within frame too small?
+#DONE- content not loading: 4: results, application; 3? (mac)
+- White BG - not finished
+- Not unified design over site
+- simplify
+
+http://websitesforarchitects.org/understanding-websites-architects/the-architects-website-preparation-checklist/
+https://www.dexigner.com/directory/cat/Architecture/Portfolios

@@ -1,0 +1,31 @@
+include ../1-base/_mixins
+include ../3-modules/_header
+include ../3-modules/_footer
+
+mixin lang-section-project-2-slides(projectNumber, lang)
+  section(id="project-"+projectNumber+"-slides", class = "lang-section "+lang)
+    .wrapper
+      .arrow_left
+        a
+          img(class = "left", src="/_data/general/left-arrow.svg")
+      .arrow_right
+        a
+          img(class = "right", src="/_data/general/right-arrow.svg")
+      +sectionSlides(projectNumber, lang, 1)
+      +sectionSlides(projectNumber, lang, 2)
+      +sectionSlides(projectNumber, lang, 3)
+      +sectionSlides(projectNumber, lang, 4)
+      +sectionSlides(projectNumber, lang, 5)
+      +sectionSlides(projectNumber, lang, 6)
+      +sectionSlides(projectNumber, lang, 7)
+      
+      
+.page-wrapper.load
+  +background-project-info(2, 'En')
+  +background-project-info(2, 'Ru')
+  .content-wrapper.load
+    +header
+    +projectLength(2)
+    +lang-section-project-2-slides(2, "En")
+    +lang-section-project-2-slides(2, "Ru")
+    //- +footer

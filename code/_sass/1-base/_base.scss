@@ -1,0 +1,71 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $base-text-color;
+    background-color: $background-color;
+    text-transform: uppercase;
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/**
+ * Images
+ */
+img {
+    // max-width: 100%;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+}
+
+/**
+ * Links
+ */
+a {
+    color: $base-text-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $anchor-color;
+        text-decoration: none;
+    }
+}
+
+strong {
+  font-weight: 800;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
