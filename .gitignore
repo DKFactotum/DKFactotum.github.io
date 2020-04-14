@@ -5,6 +5,10 @@
 _work/
 _site/
 
+_includes/4-pages/
+code/css/
+code/js/
+
 ### Node JS ###
 node_modules/
 
