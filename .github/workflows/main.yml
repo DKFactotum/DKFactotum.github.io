@@ -10,16 +10,32 @@ jobs:
   build:
     runs-on: ubuntu-latest 
     steps:
-      - run: echo Hello, world!
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1.4.1
-      - uses: actions/setup-ruby@v1.0.0
-      - run: |
-          gem install jekyll
-          npm install --global gulp-cli
-          npm install gulp
-          npm install
-          gulp build
+      - name: test
+        run: echo Hello, world!
+        
+      - name: switch branch
+        uses: actions/checkout@v2
+        
+      - name: install node
+        uses: actions/setup-node@v1.4.1
+        
+#       - name: install ruby
+#         uses: actions/setup-ruby@v1.0.0
+        
+#       - name: install jekyll
+#         run: gem install jekyll
+      
+      - name: install gulp-cli
+        run: npm install gulp-cli
+      
+      - name: install gulp
+        run: npm install gulp
+          
+      - name: install dependencies
+        run: npm install
+      
+      - name: gulp build
+        run: gulp build
           
 #     # Steps represent a sequence of tasks that will be executed as part of the job
 #     steps:
