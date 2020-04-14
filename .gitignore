@@ -11,7 +11,7 @@ code/css/
 code/js/
 
 ### Node JS ###
-node_modules/
+#node_modules/
 
 ### Jekyll ###
 .jekyll-metadata
