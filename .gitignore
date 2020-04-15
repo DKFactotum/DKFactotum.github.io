@@ -3,7 +3,7 @@
 !.gitignore
 !CNAME
 _work/
-#_site/
+_site/
 
 ### auto generated files
 #_includes/
@@ -11,7 +11,7 @@ _work/
 #code/js/
 
 ### Node JS ###
-#node_modules/
+node_modules/
 
 ### Jekyll ###
 .jekyll-metadata
