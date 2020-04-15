@@ -6,9 +6,9 @@ _work/
 #_site/
 
 ### auto generated files
-_includes/
-code/css/
-code/js/
+#_includes/
+#code/css/
+#code/js/
 
 ### Node JS ###
 #node_modules/
