@@ -27,7 +27,7 @@ const jsFiles_s    = './code/_js/*.js';
 const jsFiles_o    = 'code/js';
 // const jsScriptFile = 'scripts.js';
 const dataFiles    = '_data/**/*.yml';
-// const deployFolder =  "./_site/**/*"
+const deployFolder =  "./_site/**/*"
 
 const messages = {
   jekyllDev: 'Running: $ jekyll build for dev',
