@@ -3,37 +3,32 @@ include ../3-modules/_header
 include ../3-modules/_footer
 
 mixin lang-section-home(lang)
-  section#home(class = "lang-section "+lang)
-    .arrow_up
-      a
-        img(class = "up", src="/_data/general/up-arrow.svg")
-    .wrapper
-      //- +cube-container-project(lang, 11, 10)
-      //- +cube-container-project(lang, 10, 11)
-      //- +cube-container-project(lang, 12, 12)
+	section#home(class = "lang-section "+lang)
+		+updown-arrows()
+		.wrapper
+			//- +cube-container-project(lang, 11, 10)
+			//- +cube-container-project(lang, 10, 11)
+			//- +cube-container-project(lang, 12, 12)
 
-      +cube-container-project(lang, 1, 1)
-      +cube-container-project(lang, 3, 2)
-      +cube-container-project(lang, 4, 3)
-      +cube-container-project(lang, 5, 4)
-      +cube-container-project(lang, 8, 5)
-      //- +cube-container-project(lang, 6, 6)
-      //- +cube-container-project(lang, 7, 7)
-      //- +cube-container-project(lang, 8, 8)
-      //- +cube-container-project(lang, 9, 9)
+			+cube-container-project(lang, 1, 1)
+			+cube-container-project(lang, 3, 2)
+			+cube-container-project(lang, 4, 3)
+			+cube-container-project(lang, 5, 4)
+			+cube-container-project(lang, 8, 5)
+			//- +cube-container-project(lang, 6, 6)
+			//- +cube-container-project(lang, 7, 7)
+			//- +cube-container-project(lang, 8, 8)
+			//- +cube-container-project(lang, 9, 9)
 
-      //- +cube-container-project(lang, 13, 13)
-      //- +cube-container-project(lang, 14, 13)
-      //- +cube-container-project(lang, 15, 13)
-    .arrow_down
-      a
-        img(class = "down", src="/_data/general/down-arrow.svg")
-          
+			//- +cube-container-project(lang, 13, 13)
+			//- +cube-container-project(lang, 14, 13)
+			//- +cube-container-project(lang, 15, 13)
+
 .page-wrapper.load
-  +background-info('En')
-  +background-info('Ru')
-  .content-wrapper.load
-    +header
-    +lang-section-home('En')
-    +lang-section-home('Ru')
-    +footer
+	+background-info('Eng')
+	+background-info('Rus')
+	.content-wrapper.load
+		+header
+		+lang-section-home('Eng')
+		+lang-section-home('Rus')
+		+footer

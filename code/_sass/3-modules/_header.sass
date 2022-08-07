@@ -1,56 +1,84 @@
 // title
 
 .page-title
-  position: absolute
-  left: 50%                             // centering vert and hor
-  +transform(translate(-50%, 0%))     // centering vert and hor
-  top: 5vh
-  width: 90%
-  height: 1%
-  z-index: 2                          // bring up header elements
-  .page-title-element
-    position: absolute                  // bring in the header elements
+    position: absolute
+    left: 50%                             // centering vert and hor
+    +transform(translate(-50%, 0%))     // centering vert and hor
+    top: 5vh
+    width: 90%
+    height: 2vh
+    z-index: 5                          // bring up header elements
 
-    .lang-section
-      display: none
+    .page-title-element
+        position: absolute                  // bring in the header elements
 
-      .level1, .level2, .level3
-        display: inline-block
-        z-index: 4
+        .level1, .level2, .level3
+            display: inline-block
 
-        .active
-          font-weight: 800
-          cursor: default
-          &:hover
-            color: $base-text-color
+    .menuHolder
+        position: absolute
+        z-index: 8
+        top: -1.25vh
+        left: 0
+        width: 5vw
 
-      &.lang-active
-        display: block
+        .menuButton
+            cursor: pointer
+            font-weight: 800
+            font-size: 3.5vh
 
-  // .link
-  //   z-index: 4
+    .title
+        position: absolute
+        z-index: 7
+        display: block                      // stretch full width
+        width: 100%                         // stretch full width of the title
+        text-align: center                  // center the text
+        vertical-align: middle
 
+    .menu
+        position: absolute
+        width: 111.1111%
+        top: 2vh
+        left: -5.5555%
+        text-align: center
+        z-index: 6
 
-  .about
-    z-index: 4
-    left: 0                             // fix to the left
-  .title
-    display: block                      // stretch full width
-    width: 100%                         // stretch full width of the title
-    z-index: 1                          // bring down the title
-    text-align: center                  // center the text
+        .menuBackground
+            position: absolute
+            left: -100vw
+            top: -10vh
+            width: 300vw
+            height: 42.5vh
+            z-index: 5
+            object-fit: fill
 
+        .menuEntry
+            position: relative
+            z-index: 6
+            display: block
+            width: 100%
+            margin-top: 2.5vh
+            margin-bottom: 2.5vh
+        hr
+            position: relative
+            z-index: 6
 
-  .lang
-    z-index: 4
-    right: 0                             // fix to the right
+        .lang
+            .lang-element
+                display: inline-block
 
-    .lang-element
-      display: inline-block
-      cursor: pointer
+            &:not(.active)
+                cursor: pointer
 
     .active
-      font-weight: 800
-      cursor: default
-      &:hover
-        color: $base-text-color
+        font-weight: 800
+        cursor: default
+
+        &:hover
+            color: $base-text-color
+
+    .lang-section
+        display: none
+
+        &.lang-active
+            display: block

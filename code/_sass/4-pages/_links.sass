@@ -1,0 +1,138 @@
+section#links
+    .wrapper
+        position: absolute
+        width: 100%
+        height: 75vh
+        padding-bottom: 5vh
+
+        @include media-query-size(500px, 1050px)
+            height: 80vh
+            padding-bottom: 0vh
+
+        .links-content
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+            .introData
+                display: block
+                width: 96%
+                padding-bottom: auto
+                margin-top: 0vh
+                margin-left: 2%
+                margin-right: 2%
+                margin-bottom: 2%
+
+                h1
+                    font-size: $med-font-size
+                    margin-bottom: 2vh
+
+                p
+                    font-size: $base-font-size
+
+            .linksDiagram
+                position: relative
+                display: block
+                width: 96%
+                padding-bottom: auto
+                margin-left: 2%
+                margin-right: 2%
+                height: 85%
+
+                //border: 1px solid black
+
+                >*
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    margin: auto
+                    width: 100%
+                    height: 100%
+
+                .links
+                    z-index: 1
+                    list-style-type: none
+
+                    .linkItem
+                        position: absolute
+                        top: 0
+                        bottom: 0
+                        left: 0
+                        right: 0
+                        margin: auto
+
+                        width: 8vmin
+                        height: 8vmin
+                        font-size: 1.2vmin
+
+                        &.level1
+                            width: 7vmin
+                            height: 7vmin
+                            font-size: 1.1vmin
+
+                        &.level2
+                            width: 6vmin
+                            height: 6vmin
+                            font-size: 1.0vmin
+
+                        &.level3
+                            width: 5vmin
+                            height: 5vmin
+                            font-size: 1.9vmin
+
+                        a
+                            position: absolute
+                            top: 0
+                            bottom: 0
+                            left: 0
+                            right: 0
+
+                            transform: scale(1)
+
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            text-align: center
+
+                            .title
+                                z-index: 3
+                                font-weight: bold
+
+                            .visualItem
+                                position: absolute
+                                top: 0
+                                bottom: 0
+                                left: 0
+                                right: 0
+                                border: 1px solid black
+                                fill: white
+                                border-radius: 8vmin
+                                background-color: white
+                                z-index: 2
+
+
+                            &.interactable-false
+                                pointer-events: none
+                                cursor: default
+
+                                .title
+                                    color: $anchor-color
+                                    font-weight: normal
+
+                            &:hover
+                                transform: scale(1.1)
+
+
+                .visualLink
+                    z-index: 0
+
+                    line
+                        stroke: black
+                        stroke-width: 1px
+
+.hidden
+    display: none

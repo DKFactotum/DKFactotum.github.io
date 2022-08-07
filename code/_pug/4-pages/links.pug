@@ -1,0 +1,29 @@
+include ../1-base/_mixins
+include ../3-modules/_header
+include ../3-modules/_footer
+
+mixin lang-section-about(lang)
+	section#links(class = "lang-section "+lang)
+		.wrapper
+			.links-content
+				.introData
+					h1
+						+pull-l(".introTitle-"+lang)
+					p
+						+pull-l(".intro-"+lang)
+				.linksDiagram
+					- var count = 16//"{{ site.data.general.links.amount }}"
+					svg(class="visualLink")
+						- var n = 0;
+						while n < count
+							+pull-line(n++)
+					ul(class = "links")
+						- var n = 0;
+						while n < count
+							+pull-link(lang, n++)
+
+.page-wrapper.load
+	.content-wrapper.load#links
+		+header
+		+lang-section-about("Eng")
+		+lang-section-about("Rus")

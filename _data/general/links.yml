@@ -1,0 +1,150 @@
+introTitle-Eng: "Web Interface."
+intro-Eng:      "This is a small map to help navigate through the tangled  web of online footprint in various aspects around my professional work."
+introTitle-Rus: "Онлайн Интерфейс."
+intro-Rus:      "Это небольшая карта, отражающая различные аспекты онлайн медиа вокруг моей профессиональной деятельности."
+link0:
+  parent: none
+  interactable: false
+  title:
+    Eng: ""
+    Rus: ""
+link1:
+  parent: link0
+  interactable: false
+  title:
+    Eng: "Professional"
+    Rus: "Профессия"
+link2:
+  parent: link1
+  interactable: true
+  url: "https://www.linkedin.com/in/factotumdigital/"
+  title:
+    Eng: "LinkedIn"
+    Rus: "LinkedIn"
+link3:
+  parent: link1
+  interactable: true
+  url: "https://www.polytope.solutions/"
+  title:
+    Eng: "Freelance"
+    Rus: "Freelance"
+link4:
+  parent: link0
+  interactable: false
+  title:
+    Eng: "Academic"
+    Rus: "Академия"
+link5:
+  parent: link4
+  interactable: true
+  url: "https://www.researchgate.net/profile/Daniil-Koshelyuk"
+  title:
+    Eng: "Research"
+    Rus: "Research"
+link6:
+  parent: link0
+  interactable: false
+  title:
+    Eng: "Art"
+    Rus: "Искусство"
+link7:
+  parent: link6
+  interactable: false
+  title:
+    Eng: "Instagram"
+    Rus: "Instagram"
+link8:
+  parent: link7
+  interactable: true
+  url: "https://www.instagram.com/factotum.photo/"
+  title:
+    Eng: "Arch Photo"
+    Rus: "Арх Фото"
+link9:
+  parent: link7
+  interactable: true
+  url: "https://www.instagram.com/factotum.digital/"
+  title:
+    Eng: "Digital Art"
+    Rus: "Digital Art"
+link10:
+  parent: link6
+  interactable: true
+  url: "https://www.pinterest.es/dkfactotum/"
+  title:
+    Eng: "Pins"
+    Rus: "Pins"
+link11:
+  parent: link0
+  interactable: false
+  title:
+    Eng: "Coding"
+    Rus: "Код"
+link12:
+  parent: link11
+  interactable: true
+  url: "https://github.com/DKFactotum"
+  title:
+    Eng: "GitHub"
+    Rus: "GitHub"
+link13:
+  parent: link0
+  interactable: false
+  title:
+    Eng: "Projects"
+    Rus: "Проекты"
+link14:
+  parent: link13
+  interactable: true
+  url: "https://holofab.github.io/"
+  title:
+    Eng: "HoloFab"
+    Rus: "HoloFab"
+link15:
+  parent: link4
+  interactable: true
+  url: "https://www.iaacblog.com/?s=daniil+koshelyuk"
+  title:
+    Eng: "IAAC"
+    Rus: "IAAC"
+
+
+#
+# - | Current Work:
+# - |   - Mixed Reality platform developer for HATOM at Tinkerers
+# - }   - Computational, PArametric and Interactive Design for MAster in Virtual Reality at IED
+# -
+# - | Current Studies:
+# - |   - FabAcademy at IAAC and Tinkerers
+# -
+# - | Current Projects:
+# - |   - HoloFab - Augmented Reality tool for computational designers
+# -
+# - | Current Sites:
+# - |   - Portfolio Page
+# - |   - FabAcademy Postfolio Page
+# - |   - FabAcademy Node Page
+# - |   - HoloFab landing Page
+# -
+# - | Current Media:
+# - |   - CV on LinkedIn
+# - |   - Architectural Inspiration on Pinterest
+# - |   - Architectural Photography on Instagram
+# - |   - Computational Design on Instagram
+# - |   - Computational Design Literature Log on Twitter
+# - |   - Coding Adventures on GitHub
+# - |   - Research Experience on ResearchGate
+# - |   - Publications on Issuu
+# - |   - Video experiments on Youtube
+# - |   - Meta-page on Facebook
+# -
+# - | Past Highlights:
+# - |   - Intraspace - AR environment for data in interiors - Master Thesis Project
+# - |       - Spatial Data Visualization tools
+# - |       - Written Thesis
+# - |       - Project Overview
+# - |   - Alive - responsive matrial system project at IAAC
+# - |       - ACADIA publication
+# - |       - Project Overview
+# - |   - Tinkerers HATOM at Sevilla Innovation Forum
+# - |   - EXisting Building BIM+GIS Modelling and aalysis - Point of View Research Group - MARchI

@@ -3,30 +3,25 @@ include ../3-modules/_header
 include ../3-modules/_footer
 
 mixin lang-section-project-4-slides(projectNumber, lang)
-  section(id="project-"+projectNumber+"-slides", class = "lang-section "+lang)
-    .wrapper
-      .arrow_left
-        a
-          img(class = "left", src="/_data/general/left-arrow.svg")
-      .arrow_right
-        a
-          img(class = "right", src="/_data/general/right-arrow.svg")
-      +sectionSlides(projectNumber, lang, 1)
-      +sectionSlides(projectNumber, lang, 2)
-      +sectionSlides(projectNumber, lang, 3)
-      +sectionSlides(projectNumber, lang, 4)
-      +sectionSlides(projectNumber, lang, 5)
-      +sectionSlides(projectNumber, lang, 6)
-      +sectionSlides(projectNumber, lang, 7)
-      +sectionSlides(projectNumber, lang, 8)
+	section(id="project-"+projectNumber+"-slides", class = "lang-section "+lang)
+		.wrapper
+			+sideways-arrows()
+			+sectionSlides(projectNumber, lang, 1)
+			+sectionSlides(projectNumber, lang, 2)
+			+sectionSlides(projectNumber, lang, 3)
+			+sectionSlides(projectNumber, lang, 4)
+			+sectionSlides(projectNumber, lang, 5)
+			+sectionSlides(projectNumber, lang, 6)
+			+sectionSlides(projectNumber, lang, 7)
+			+sectionSlides(projectNumber, lang, 8)
 
-      
+
 .page-wrapper.load
-  +background-project-info(4, 'En')
-  +background-project-info(4, 'Ru')
-  .content-wrapper.load
-    +header
-    +projectLength(4)
-    +lang-section-project-4-slides(4, "En")
-    +lang-section-project-4-slides(4, "Ru")
-    //- +footer
+	+background-project-info(4, 'Eng')
+	+background-project-info(4, 'Rus')
+	.content-wrapper.load
+		+header
+		+projectLength(4)
+		+lang-section-project-4-slides(4, "Eng")
+		+lang-section-project-4-slides(4, "Rus")
+		//- +footer
