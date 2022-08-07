@@ -125,9 +125,9 @@ gulp.task('jekyll-rebuild', gulp.series('jekyll-dev', function(done) {
   done();
 }));
 
-gulp.task('ghDeploySite', function() {
-    return gulp.src(deployFolder).pipe(ghdeploy());
-});
+// gulp.task('ghDeploySite', function() {
+//     return gulp.src(deployFolder).pipe(ghdeploy());
+// });
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -157,4 +157,4 @@ gulp.task('default', gulp.series('sass', 'scripts', 'pug', 'jekyll-rebuild', gul
 
 gulp.task('build', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod'));
 
-gulp.task('deploy', gulp.series('build', 'ghDeploySite'));
+// gulp.task('deploy', gulp.series('build', 'ghDeploySite'));
