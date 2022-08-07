@@ -153,7 +153,7 @@ gulp.task('default', gulp.series('sass', 'scripts', 'pug', 'jekyll-rebuild', gul
 
 gulp.task('build', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod'));
 
-gulp.task('deploy', gulp.series('build', function deploy() {
+gulp.task('deploy', gulp.series('build', function deploy(done) {
     gulp.src(deployFolder)
         .pipe(ghdeploy());
     done();
