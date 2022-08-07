@@ -50,7 +50,7 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream:true})) ;
 });
 
-gulp.task('sass-prod', function sassProd() {
+gulp.task('sass-prod', function () {
   return gulp.src(cssFiles_s)
     .pipe(sass({
       includePaths: [sassFolder].concat(bourbon),
@@ -71,7 +71,7 @@ gulp.task('scripts', function () {
         .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('scripts-prod', function scriptsProd() {
+gulp.task('scripts-prod', function () {
   return gulp.src(jsFiles_s)
     // .pipe(concat(jsScriptFile))
     .pipe(uglify())
@@ -88,7 +88,7 @@ gulp.task('pug', function () {
         .pipe(gulp.dest('./'+pugFiles_o));
 });
 
-gulp.task('pug-prod', function pugProd() {
+gulp.task('pug-prod', function () {
   return gulp.src(pugFiles_s)
     .pipe(pug())
     .pipe(gulp.dest('./'+pugFiles_o));
@@ -125,10 +125,8 @@ gulp.task('jekyll-rebuild', gulp.series('jekyll-dev', function(done) {
   done();
 }));
 
-gulp.task('ghDeploySite', function(done) {
-    gulp.src(deployFolder)
-        .pipe(ghdeploy());
-    done();
+gulp.task('ghDeploySite', function() {
+    return gulp.src(deployFolder).pipe(ghdeploy());
 });
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -159,4 +157,4 @@ gulp.task('default', gulp.series('sass', 'scripts', 'pug', 'jekyll-rebuild', gul
 
 gulp.task('build', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod'));
 
-gulp.task('deploy', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod', 'ghDeploySite'));
+gulp.task('deploy', gulp.series('build', 'ghDeploySite'));
