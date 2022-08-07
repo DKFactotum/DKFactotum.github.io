@@ -125,6 +125,12 @@ gulp.task('jekyll-rebuild', gulp.series('jekyll-dev', function(done) {
   done();
 }));
 
+gulp.task('ghDeploySite', function(done) {
+    gulp.src(deployFolder)
+        .pipe(ghdeploy());
+    done();
+});
+
 ////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('browser-sync', function() {
@@ -153,8 +159,4 @@ gulp.task('default', gulp.series('sass', 'scripts', 'pug', 'jekyll-rebuild', gul
 
 gulp.task('build', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod'));
 
-gulp.task('deploy', gulp.series('build', async function deploy(done) {
-    gulp.src(deployFolder)
-        .pipe(ghdeploy());
-    done();
-}));
+gulp.task('deploy', gulp.series(gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'), 'jekyll-prod', 'ghDeploySite'));
