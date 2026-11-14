@@ -76,6 +76,8 @@ function resetNavigation() {
     };
 
     home.addClass('active');
+    // A project and its slides sit under the projects page.
+    if (targetID.search("project-") == 0) { $('.title .projects').removeClass('is-hidden'); };
     targetClass = '.title .' + targetID;
     targetSection = $(targetClass);
     targetSection.removeClass('is-hidden').removeAttr('href').addClass('active');

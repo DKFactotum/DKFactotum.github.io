@@ -1,0 +1,64 @@
+// The landing: one column in the middle of the page, over the name and the one-liner.
+
+section#landing
+  display: none
+  &.lang-active
+    display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+  .landing-content
+    position: relative
+    z-index: 3
+    width: 640px
+    max-width: 84vw
+    margin-top: -6vh
+    @include media-query($on-palm)
+      margin-top: 0
+
+    .landing-lead
+      font-size: $med-about-font-size
+      line-height: 1.35
+      margin: 0 0 6vh 0
+
+    .landing-work
+      display: inline-block
+      padding: 2.2vh 2.4em
+      border: 2px solid $base-text-color
+      color: $base-text-color
+      text-decoration: none
+      font-size: $big-font-size
+      text-transform: uppercase
+      letter-spacing: 0.04em
+      transition: background $animation-speed, color $animation-speed
+      &:hover
+        background: $base-text-color
+        color: $background-color
+
+    .landing-more
+      margin-top: 7vh
+      font-size: $base-about-font-size
+      line-height: 1.6
+
+      a
+        color: $base-text-color
+        text-decoration: none
+        &:hover
+          color: $anchor-color
+
+      .landing-projects
+        display: block
+        text-transform: uppercase
+        strong
+          margin-right: 0.6em
+        .landing-note
+          font-style: normal
+          text-transform: none
+          color: $anchor-color
+
+      .landing-small
+        margin-top: 1.5vh
+        color: $anchor-color
+        text-transform: uppercase
+        font-size: $base-font-size

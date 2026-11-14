@@ -8,6 +8,8 @@ mixin header()
 			div(class = "lang-section Eng")
 				.level1
 					a.home(href='/?lang=Eng') Home
+				.level1b
+					a.projects.is-hidden(href='/projects.html?lang=Eng') &nbsp/ Projects
 				.level2
 					a.about.is-hidden(href='/about.html?lang=Eng') &nbsp/ About
 					a.links.is-hidden(href='/links.html?lang=Eng') &nbsp/ Links
@@ -25,8 +27,10 @@ mixin header()
 			div(class = "lang-section Esp")
 				.level1
 					a.home(href='/?lang=Esp') Inicio
+				.level1b
+					a.projects.is-hidden(href='/projects.html?lang=Esp') &nbsp/ Proyectos
 				.level2
-					a.about.is-hidden(href='/about.html?lang=Esp') &nbsp/ Sobre mí
+					a.about.is-hidden(href='/about.html?lang=Esp') &nbsp/ Sobre&nbsp;mí
 					a.links.is-hidden(href='/links.html?lang=Esp') &nbsp/ Enlaces
 					a.project-1.is-hidden(href='/project-1.html?lang=Esp') &nbsp/ Proyecto 1
 					a.project-2.is-hidden(href='/project-2.html?lang=Esp') &nbsp/ Proyecto 2
@@ -41,6 +45,12 @@ mixin header()
 					a.project-5-slides.is-hidden(href='/project-5-slides.html?lang=Esp') &nbsp/ Diapositivas
 		div.page-title-element.menu.hidden
 			img.menuBackground(src='/_data/general/menu_BG.png')
+			div.menuEntry
+				div(class = "lang-section Eng")
+					a(href='/projects.html?lang=Eng') Projects
+				div(class = "lang-section Esp")
+					a(href='/projects.html?lang=Esp') Proyectos
+			hr
 			div.menuEntry
 				div(class = "lang-section Eng")
 					a(href='/about.html?lang=Eng') About

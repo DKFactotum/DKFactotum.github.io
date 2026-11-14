@@ -3,6 +3,9 @@ Eng:
   paragraph:        "I am an architect by education and a developer by practice. Since 2019 I have worked as a freelance developer, now through <strong>Polytope Solutions</strong>: <strong>real-time 3D and XR</strong> applications in Unity, and <strong>tools that connect design software to devices</strong>. I have taught at the Institute for Advanced Architecture of Catalonia (IAAC) since 2018, and taught at IED Barcelona from 2019/20 to 2023/24."
   extras:           "This site shows my student work in architecture, at the Moscow Architectural Institute (MArchI) and IAAC, 2015–2018: the images, and some of the analytical and technical side of each project. My current work is at <a class='link' href='https://www.polytope.solutions'>www.polytope.solutions</a>."
   contact-intro:    "For work, collaborations or the use of any of this content, write to:"
+  landing-lead:     "Daniil Koshelyuk works through <strong>Polytope Solutions</strong>: real-time 3D and XR, and tools that connect design software to devices."
+  landing-work:     "For work: <strong>www.polytope.solutions</strong>"
+  landing-projects: "student work in architecture, 2015–2018"
   name:             "<strong>Daniil</strong><br>Koshelyuk"
   oneliner:         "implementing<br><strong>technologies</strong><br>in <strong>architecture</strong><br>investigating<br>and operating<br><strong>complex<br>systems</strong>"
 Esp:
@@ -10,5 +13,8 @@ Esp:
   paragraph:        "Soy arquitecto de formación y desarrollador de profesión. Desde 2019 trabajo como desarrollador freelance, hoy a través de <strong>Polytope Solutions</strong>: aplicaciones de <strong>3D en tiempo real y XR</strong> en Unity, y <strong>herramientas que conectan el software de diseño con los dispositivos</strong>. Enseño en el Instituto de Arquitectura Avanzada de Cataluña (IAAC) desde 2018, y enseñé en el IED Barcelona de 2019/20 a 2023/24."
   extras:           "Este sitio muestra mi trabajo de estudiante en arquitectura, en el Instituto de Arquitectura de Moscú (MArchI) y en el IAAC, 2015–2018: las imágenes y parte del lado analítico y técnico de cada proyecto. Mi trabajo actual está en <a class='link' href='https://www.polytope.solutions'>www.polytope.solutions</a>."
   contact-intro:    "Para trabajo, colaboraciones o el uso de cualquier contenido de este sitio, escríbame a:"
+  landing-lead:     "Daniil Koshelyuk trabaja a través de <strong>Polytope Solutions</strong>: 3D en tiempo real y XR, y herramientas que conectan el software de diseño con los dispositivos."
+  landing-work:     "Para trabajo: <strong>www.polytope.solutions</strong>"
+  landing-projects: "trabajo de estudiante en arquitectura, 2015–2018"
   name:             "<strong>Daniil</strong><br>Koshelyuk"
   oneliner:         "implementando<br><strong>tecnologías</strong><br>en la <strong>arquitectura</strong><br>investigando<br>y operando<br><strong>sistemas<br>complejos</strong>"
