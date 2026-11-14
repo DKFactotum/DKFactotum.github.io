@@ -30,13 +30,13 @@
         align-items: center
         line-height: 1
 
+        // Three bars drawn here rather than the ≡ character, which Open Sans lacks: every system
+        // drew it from a different fallback font, at a different height (owner, S107).
         .menuButton
             cursor: pointer
-            font-weight: 800
-            font-size: 3.5vh
-            line-height: 1
-            position: relative
-            top: -0.2vh                     // the glyph sits low in its box; measured at three sizes
+            width: 2.2vh
+            height: 1.8vh
+            background: linear-gradient($base-text-color, $base-text-color) top / 100% 0.42vh no-repeat, linear-gradient($base-text-color, $base-text-color) center / 100% 0.42vh no-repeat, linear-gradient($base-text-color, $base-text-color) bottom / 100% 0.42vh no-repeat
 
     .title
         position: absolute
@@ -65,14 +65,20 @@
         text-align: center
         z-index: 6
 
+        // The backdrop: solid white down past the last entry, then fading out. menu_BG.png was
+        // only 94-96% opaque behind the entries, so the page showed through (owner, S107).
         .menuBackground
+            display: none
+        &:before
+            content: ''
             position: absolute
             left: -100vw
             top: -13.5vh
             width: 300vw
-            height: 53.5vh
+            height: 62vh
             z-index: 5
-            object-fit: fill
+            pointer-events: none
+            background: linear-gradient(to bottom, $background-color 0, $background-color 47vh, rgba($background-color, 0) 62vh)
 
         .menuEntry
             position: relative
@@ -104,6 +110,7 @@
 
     .active
         font-weight: 800
+        font-size: 1.045em                  // Open Sans' extra-bold capitals render about 4% shorter than its light ones
         cursor: default
 
         &:hover
