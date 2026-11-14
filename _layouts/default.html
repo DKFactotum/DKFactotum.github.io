@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="code/js/general.js"> </script>
-    <script language="JavaScript" type="text/javascript" src="code/js/language.js"> </script>
-    <script language="JavaScript" type="text/javascript" src="code/js/main.js"> </script>
+    <script language="JavaScript" type="text/javascript" src="code/js/general.js?v={{ site.time | date: '%s' }}"> </script>
+    <script language="JavaScript" type="text/javascript" src="code/js/language.js?v={{ site.time | date: '%s' }}"> </script>
+    <script language="JavaScript" type="text/javascript" src="code/js/main.js?v={{ site.time | date: '%s' }}"> </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +15,8 @@
 
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,800&subset=latin,latin-ext' type='text/css'>
-    <link rel="stylesheet" href="/code/css/index.css">
+    <!-- ?v= is the build time: Cloudflare caches CSS and JS for 4h, the pages not at all, so each build must name fresh URLs. -->
+    <link rel="stylesheet" href="/code/css/index.css?v={{ site.time | date: '%s' }}">
 </head>
 
 <body>
