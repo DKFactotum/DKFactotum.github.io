@@ -57,8 +57,18 @@
             z-index: 6
             display: block
             width: 100%
-            margin-top: 2.5vh
-            margin-bottom: 2.5vh
+            min-height: 7vh
+            // padding-top: 2.5vh
+            // padding-bottom: 2.5vh
+
+            a, .lang-element-holder
+                display: inline-block
+                height: 7vh
+                width: 100%
+                line-height: 7vh
+                text-align: center
+                vertical-align: middle
+
         hr
             position: relative
             z-index: 6
@@ -67,8 +77,8 @@
             .lang-element
                 display: inline-block
 
-            &:not(.active)
-                cursor: pointer
+                &:not(.active)
+                    cursor: pointer
 
     .active
         font-weight: 800

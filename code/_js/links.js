@@ -5,9 +5,10 @@ var angleUpdateTime = 5;
 var targetAngleSpeed = 0.00125;
 var angleSpeed = 0.000125;
 var rotating = true;
-var startStep = 12;
-var minStep = 9;
-var stepChange = 0.85;
+var startStep = 7.5;
+var minStep = 7.5;
+var maxStep = 12;
+var stepChange = 1.125;
 
 ////////////////////////////////////////////////////////////////////////////////
 //////////////////////Preparation functions/////////////////////////////////////
@@ -77,7 +78,7 @@ function PlaceItem(dict, item, itemName, parentName, line, level, base){
                 children: [],
                 level: level+1
             });
-            var levelClassName = "level"+level;
+            var levelClassName = "level"+(level+1);
             item.addClass(levelClassName);
             found = true;
             return true;
@@ -110,7 +111,7 @@ function AdjustItems(dict, baseStep, angleRange, angleOffset, parentX, parentY){
     var bodyHeight = $(window).height()/100;
     var vMin = Math.min(bodyWidth, bodyHeight);
 
-    baseStep = Math.max(minStep,baseStep);
+    baseStep = Math.max(minStep,Math.min(maxStep, baseStep));
     var startAngle = angleOffset;
     var angleStep = angleRange / dict.length;
     if (dict.length > 1){
