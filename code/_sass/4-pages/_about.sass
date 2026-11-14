@@ -1,12 +1,13 @@
+// Every size on the page is a fraction of the card, so it keeps the proportions it has at
+// 1280x940 (owner, S107) on any screen: the card is 75vmin, or the full width on a phone.
+=about-size($prop, $ratio)
+  #{$prop}: 75vmin * $ratio
+  @include media-query($on-palm)
+    #{$prop}: 100vmin * $ratio
+
 .contents#about
   .content-wrapper
-    width: 900px                           // page size
-    @include media-query(1000px)
-      width: 65vmin
-    @include media-query(450px)
-      width: 100vmin
-    @include media-query-horisontal(1050px)
-      width: 80vmin
+    +about-size(width, 1)
     margin: auto
     position: relative
     z-index: 1
@@ -18,12 +19,17 @@ section#about
   .wrapper
     position: absolute
     +card
+    &:after
+      padding-top: 110%                    // a little taller than wide, for the bio
 
     .about-content
       position: absolute
-      padding: 1vw
-      height: calc(100% - 2vw)
-      width: calc(100% - 2vw)
+      +about-size(padding, 0.018)
+      height: calc(100% - 2 * 75vmin * 0.018)
+      width: calc(100% - 2 * 75vmin * 0.018)
+      @include media-query($on-palm)
+        height: calc(100% - 2 * 100vmin * 0.018)
+        width: calc(100% - 2 * 100vmin * 0.018)
 
       display: flex
       flex-direction: column
@@ -34,17 +40,18 @@ section#about
         padding-bottom: auto
       .about-intro
         h2
-          padding-bottom: 2%
+          margin: 0
+          +about-size(font-size, 0.031)
+          +about-size(padding-bottom, 0.022)
+        // the picture's top meets the first paragraph's first line
         .about-av
           position: relative
           float: right
-          +size(275px)
-          @include media-query(900px)
-            +size(25vmin)
-          @include media-query-horisontal(900px)
-            +size(25vmin)
-          margin-left: 1vw
-          margin-bottom: 0.5vw
+          +about-size(width, 0.39)
+          +about-size(height, 0.39)
+          +about-size(margin-left, 0.018)
+          +about-size(margin-bottom, 0.009)
+          +about-size(margin-top, 0.004)
           img
             height: 100%
             width: 100%
@@ -53,21 +60,14 @@ section#about
       .about-invitations
         a.link
           display: block
-          padding: 1vw
+          +about-size(padding, 0.018)
           text-align: center
-          font-size: 35px
-          @include media-query(900px)
-            font-size: $med-about-font-size
-          @include media-query-horisontal(830px)
-            font-size: $med-about-font-size
+          +about-size(font-size, 0.0496)
 
   p, a
     color: $base-text-color
-    font-size: 17px
-    @include media-query(900px)
-      font-size: $base-about-font-size
-    @include media-query-horisontal(830px)
-      font-size: $base-about-font-size
+    +about-size(font-size, 0.0232)
+    margin: 0
     text-align: left
 
   a
@@ -80,6 +80,8 @@ section#about
       margin-top: 0.75em
     hyphens: auto
     -webkit-hyphens: auto
+  p.below-picture
+    clear: right                         // the teaching starts under the picture, not beside it
   p.centered
     text-align: center
 

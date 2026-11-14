@@ -4,10 +4,12 @@
     position: absolute
     left: 50%                             // centering vert and hor
     +transform(translate(-50%, 0%))     // centering vert and hor
-    top: 5vh
+    top: 4vh                              // the centre line stays at 6vh, as in 2019
     width: 90%
-    height: 2vh
+    height: 4vh
     z-index: 5                          // bring up header elements
+    // Bold and thin capitals the same height, even if a fallback font stands in for a weight.
+    font-size-adjust: cap-height 0.714
 
     .page-title-element
         position: absolute                  // bring in the header elements
@@ -15,31 +17,38 @@
         .level1, .level1b, .level2, .level3
             display: inline-block
 
-    // The menu button and the breadcrumb share one centre line, the middle of .page-title,
-    // so a breadcrumb that wraps grows evenly both ways instead of climbing (S107).
+    // The menu button and the breadcrumb each fill the bar's height and centre in it, so they
+    // share one centre line; a breadcrumb that wraps grows evenly both ways (S107).
     .menuHolder
         position: absolute
         z-index: 8
-        top: 50%
-        +transform(translateY(-50%))
+        top: 0
+        bottom: 0
         left: 0
         width: 5vw
+        display: flex
+        align-items: center
         line-height: 1
 
         .menuButton
             cursor: pointer
             font-weight: 800
             font-size: 3.5vh
+            line-height: 1
+            position: relative
+            top: -0.2vh                     // the glyph sits low in its box; measured at three sizes
 
     .title
         position: absolute
         z-index: 7
-        display: block
+        top: 0
+        bottom: 0
         left: 3.5em                         // clear of the menu button, and as much on the right
         right: 3.5em
-        top: 50%
-        +transform(translateY(-50%))
-        text-align: center                  // center the text
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
         line-height: 1.3
 
         .lang-section.lang-active
@@ -51,7 +60,7 @@
     .menu
         position: absolute
         width: 111.1111%
-        top: 2vh
+        top: 5.5vh                          // first entry 7vh below the title's centre, like the rest
         left: -5.5555%
         text-align: center
         z-index: 6
@@ -59,9 +68,9 @@
         .menuBackground
             position: absolute
             left: -100vw
-            top: -10vh
+            top: -13.5vh
             width: 300vw
-            height: 50vh
+            height: 53.5vh
             z-index: 5
             object-fit: fill
 

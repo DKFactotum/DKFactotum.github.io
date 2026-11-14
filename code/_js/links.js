@@ -22,7 +22,7 @@ $( window ).on("load", function() {
 
 // The tree is laid out twice: once to find the nodes' centre of mass, and once shifted by
 // it, so the tree sits centred in its card whichever way its branches go.
-var shiftX = 0, shiftY = 0, collected = null;
+var shiftX = 0, shiftY = 0, collected = null, placed = null;
 function LayoutLinks(){
     for(var index in langDict){
         collected = []; shiftX = 0; shiftY = 0;
@@ -30,11 +30,32 @@ function LayoutLinks(){
         var sx = 0, sy = 0;
         for (var i in collected){ sx += collected[i][0]; sy += collected[i][1]; }
         if (collected.length > 0){ shiftX = -sx/collected.length; shiftY = -sy/collected.length; }
-        collected = null;
+        collected = null; placed = [];
         // the root's own line starts where the root now is, not at the card's centre
         var vMin = Math.min($(window).width(), $(window).height())/100;
         AdjustItems(langDict[index], startStep, TWOPI, layoutAngle, shiftX*vMin, shiftY*vMin);
+        FitDiagram(langDict[index], placed, vMin);
+        placed = null;
     }
+}
+// On a portrait screen the tree, sized in vmin, is drawn for the width alone and comes out
+// small; scale the whole diagram up until its farthest node, from the centre, meets the card's
+// edge less a small margin (S107). Landscape screens keep it as laid out.
+function FitDiagram(dict, nodes, vMin){
+    var diagram = $(dict[0].line).closest(".linksDiagram");
+    var w = diagram.width(), h = diagram.height();
+    var k = 1;
+    if (w > 0 && h > 0 && $(window).width() < $(window).height()){
+        var reachX = 0, reachY = 0;
+        for (var i in nodes){
+            var r = $(nodes[i].el).outerWidth()/2;
+            reachX = Math.max(reachX, Math.abs(nodes[i].x*vMin) + r);
+            reachY = Math.max(reachY, Math.abs(nodes[i].y*vMin) + r);
+        }
+        if (reachX > 0 && reachY > 0)
+            k = Math.max(1, Math.min(2.2, (w/2*0.94)/reachX, (h/2*0.94)/reachY));
+    }
+    diagram.css("transform", k == 1 ? "" : "scale("+k+")");
 }
 var relayoutUntil = 0, relayoutRunning = false;
 function RelayoutForAWhile(){
@@ -150,6 +171,7 @@ function AdjustItems(dict, baseStep, angleRange, angleOffset, parentX, parentY){
         var y = offset * Math.sin(angle);
         if (collected) collected.push([x, y]);
         x += shiftX; y += shiftY;
+        if (placed) placed.push({el: item.item, x: x, y: y});
         $(item.item).css("transform","translate("+x+"vmin,"+y+"vmin)");
         $(item.line).attr("x1", parentX);
         $(item.line).attr("y1", parentY);
