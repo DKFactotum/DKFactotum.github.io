@@ -63,7 +63,7 @@ section#about
 
   p, a
     color: $base-text-color
-    font-size: 18px
+    font-size: 17px
     @include media-query(900px)
       font-size: $base-about-font-size
     @include media-query-horisontal(830px)
@@ -75,8 +75,9 @@ section#about
 
   p.justified
     text-align: justify
+    line-height: 1.2
     & + p.justified
-      margin-top: 0.6em
+      margin-top: 0.75em
     hyphens: auto
     -webkit-hyphens: auto
   p.centered

@@ -12,16 +12,41 @@ var stepChange = 1.125;
 $( window ).on("load", function() {
     OrganizeLinks();
     LayoutLinks();
-    $(window).on("resize", LayoutLinks);
+    // The card eases to its new size over a second; follow it frame by frame so the lines,
+    // which are drawn in pixels from its size, stay on the nodes, which are placed in vmin.
+    $(window).on("resize", RelayoutForAWhile);
     // A hidden language section has no size; lay it out again once it is shown.
     $('.lang-element').on("click", function(){ setTimeout(LayoutLinks, 0); });
     setInterval(PulseLink, pulseEvery);
 });
 
+// The tree is laid out twice: once to find the nodes' centre of mass, and once shifted by
+// it, so the tree sits centred in its card whichever way its branches go.
+var shiftX = 0, shiftY = 0, collected = null;
 function LayoutLinks(){
     for(var index in langDict){
+        collected = []; shiftX = 0; shiftY = 0;
         AdjustItems(langDict[index], startStep, TWOPI, layoutAngle, 0, 0);
+        var sx = 0, sy = 0;
+        for (var i in collected){ sx += collected[i][0]; sy += collected[i][1]; }
+        if (collected.length > 0){ shiftX = -sx/collected.length; shiftY = -sy/collected.length; }
+        collected = null;
+        // the root's own line starts where the root now is, not at the card's centre
+        var vMin = Math.min($(window).width(), $(window).height())/100;
+        AdjustItems(langDict[index], startStep, TWOPI, layoutAngle, shiftX*vMin, shiftY*vMin);
     }
+}
+var relayoutUntil = 0, relayoutRunning = false;
+function RelayoutForAWhile(){
+    relayoutUntil = Date.now() + 1300;
+    if (relayoutRunning) return;
+    relayoutRunning = true;
+    var tick = function(){
+        LayoutLinks();
+        if (Date.now() < relayoutUntil) requestAnimationFrame(tick);
+        else relayoutRunning = false;
+    };
+    requestAnimationFrame(tick);
 }
 function PulseLink(){
     var items = $("section.lang-section.lang-active .linkItem a");
@@ -123,6 +148,8 @@ function AdjustItems(dict, baseStep, angleRange, angleOffset, parentX, parentY){
         var offset = item.level * baseStep;
         var x = offset * Math.cos(angle);
         var y = offset * Math.sin(angle);
+        if (collected) collected.push([x, y]);
+        x += shiftX; y += shiftY;
         $(item.item).css("transform","translate("+x+"vmin,"+y+"vmin)");
         $(item.line).attr("x1", parentX);
         $(item.line).attr("y1", parentY);

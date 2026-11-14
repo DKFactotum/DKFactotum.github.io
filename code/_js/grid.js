@@ -43,20 +43,20 @@ function watchButtons() {
   var arrow_up    = $('.arrow_up');
   var arrow_down  = $('.arrow_down');
   arrow_up.on('click', function scroll_up_init() {
-    scrollUp();
+    scrollDown();
     resetButtons();
   });
   arrow_down.on('click', function scroll_down_init() {
-    scrollDown();
+    scrollUp();
     resetButtons();
   });
   $(window).bind('keydown', function(e) {
     if (e.keyCode == 38) {
-      scrollUp();
+      scrollDown();
       resetButtons();
     }
     else if (e.keyCode == 40) {
-      scrollDown();
+      scrollUp();
       resetButtons();
     };
   });
@@ -65,11 +65,11 @@ function scroll(event) {
   var wScroll = event.deltaY;
   // console.log(wScroll);
   if (wScroll < 0){
-    scrollUp();
+    scrollDown();
     resetButtons();
   }
   else if (wScroll > 0) {
-    scrollDown();
+    scrollUp();
     resetButtons();
   }
 }
@@ -189,13 +189,13 @@ function resetButtons() {
     box_14_amount = box_14.length/2, box_15_amount = box_15.length/2;
 
   if ((box_13_amount != 0) || (box_14_amount != 0) || (box_15_amount != 0)) {
-    arrow_up.removeClass("hidden");   }
-  else if ((box_13_amount == 0) && (box_14_amount == 0) && (box_15_amount == 0)) {
-    arrow_up.addClass("hidden");      };
-  if ((box_10_amount != 0) || (box_11_amount != 0) || (box_12_amount != 0)) {
     arrow_down.removeClass("hidden"); }
-  else if ((box_10_amount == 0) && (box_11_amount == 0) && (box_12_amount == 0)) {
+  else if ((box_13_amount == 0) && (box_14_amount == 0) && (box_15_amount == 0)) {
     arrow_down.addClass("hidden");    };
+  if ((box_10_amount != 0) || (box_11_amount != 0) || (box_12_amount != 0)) {
+    arrow_up.removeClass("hidden");   }
+  else if ((box_10_amount == 0) && (box_11_amount == 0) && (box_12_amount == 0)) {
+    arrow_up.addClass("hidden");      };
 };
 
 ////////////////////////////////////////////////////////////////////////////////
