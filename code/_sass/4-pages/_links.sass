@@ -127,10 +127,15 @@ section#links
                             &:hover
                                 transform: scale(1.1)
 
+                            // Always on its own layer: promoting it only for the pulse re-rendered
+                            // the text and border as it started and ended, which read as a flicker.
+                            will-change: scale
+                            backface-visibility: hidden
+
                             &.pulse-up
-                                animation: linkPulseUp 900ms $ease-open both
+                                animation: linkPulseUp 1100ms ease-in-out both
                             &.pulse-down
-                                animation: linkPulseDown 900ms $ease-open both
+                                animation: linkPulseDown 1100ms ease-in-out both
 
 
                 .visualLink
@@ -149,17 +154,17 @@ section#links
     0%
         scale: 1
     35%
-        scale: 1.08
+        scale: 1.04
     65%
-        scale: 0.98
+        scale: 0.99
     100%
         scale: 1
 @keyframes linkPulseDown
     0%
         scale: 1
     35%
-        scale: 0.93
+        scale: 0.965
     65%
-        scale: 1.02
+        scale: 1.01
     100%
         scale: 1

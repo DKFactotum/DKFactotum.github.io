@@ -3,7 +3,7 @@ var langDict = [];
 // The tree stands still (S107: the rotation went); nodes now and then swell or shrink a
 // little and settle, one at a time.
 var layoutAngle = 0.65;      // Art's branch, the longest, points into the lower-right corner
-var pulseEvery = 1400;
+var pulseEvery = 1600;
 var startStep = 7.5;
 var minStep = 7.5;
 var maxStep = 12;
@@ -26,10 +26,11 @@ function LayoutLinks(){
 function PulseLink(){
     var items = $("section.lang-section.lang-active .linkItem a");
     if (items.length == 0) return;
+    // Clear the last pulse first, so a finished one never jumps back when its class goes.
+    items.filter(".pulse-up, .pulse-down").removeClass("pulse-up pulse-down");
     var item = items.eq(Math.floor(Math.random() * items.length));
     var kind = Math.random() < 0.6 ? "pulse-up" : "pulse-down";
-    item.removeClass("pulse-up pulse-down");
-    void item[0].offsetWidth;   // restart the animation if it was the last one picked
+    void item[0].offsetWidth;   // restart the animation if the same node is picked again
     item.addClass(kind);
 }
 
