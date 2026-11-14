@@ -12,7 +12,7 @@ mixin lang-section-about(lang)
 					p
 						+pull-l(".intro-"+lang)
 				.linksDiagram
-					- var count = 16//"{{ site.data.general.links.amount }}"
+					- var count = linkCount
 					svg(class="visualLink")
 						- var n = 0;
 						while n < count
@@ -26,4 +26,4 @@ mixin lang-section-about(lang)
 	.content-wrapper.load#links
 		+header
 		+lang-section-about("Eng")
-		+lang-section-about("Rus")
+		+lang-section-about("Esp")

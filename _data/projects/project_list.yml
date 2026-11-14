@@ -7,10 +7,10 @@
 
 amount:           15
 project-1:
-  Eng-title:       14<br><strong>Joules</strong>
-  Rus-title:       14<br><strong>Джоулей</strong>
-  Eng-descript:    "Investigation<br>of<br>urban<br>potential<br>of<br><strong>carless</strong><br>future"
-  Rus-descript:    "Исследование<br>потенциала<br>общественных<br>пространств<br>в бдующем<br><strong>без<br>машин</strong>"
+  Eng-title:       "14<br><strong>Joules</strong>"
+  Esp-title:       "14<br><strong>Joules</strong>"
+  Eng-descript:    "Investigation<br>of<br>urban<br>potential<br>of<br><strong>carless</strong><br>future<br><br>IAAC, 2017"
+  Esp-descript:    "Investigación<br>del<br>potencial<br>urbano<br>de un<br>futuro<br><strong>sin coches</strong><br><br>IAAC, 2017"
   type:           "1"
   link:           "/project-1-slides.html?slide=1"
   overview:       "/project-1.html"
@@ -19,120 +19,120 @@ project-1:
   content:
     element1:
       Eng-name:       "Description"
-      Rus-name:       "Описание"
+      Esp-name:       "Descripción"
       path:          "./_data/projects/project-1/img/thumb-01.jpg"
       link:          "/project-1-slides.html?slide=1"
       path-slide:    "./_data/projects/project-1/img/slide-01.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-01-small.jpg"
       Eng:
-        description: 'Project span around a simple idea - what will happen to the public space once the streets are cleared of private transport? How would we use and design urban space differently? Group project with Bhakti Loonawat, Gabriele Jureviciute, Kedar Undale, Ozge Tektas, Wei-Hong Wang, faculty Edouard Cabay and Rodrigo Aguirre, research studio at IAAC (<a href="http://www.iaacblog.com/programs/14-joules/">more details</a>).'
-      Rus: # too long horizontal
-        description: 'Проект закручивается вокруг простой идеи - что произойдет с общественным пространством, если улицы освободятся от частного транспорта. Что поменяется в том, как мы используем и проектируем городские пространства? Групповой проект совместно с Бакти Лунват, Габриэле Йуривичуте, Кедар Ундале, Озге Тектас, Вей-Хонг Вей, под руководством Эдуард Кобей и Родриго Агуирре в исследовательской студии в IAAC (<a href="http://www.iaacblog.com/programs/14-joules/">больше деталей</a>).'
+        description: "The project revolved around a simple idea: what will happen to public space once the streets are cleared of private transport? How would we use and design urban space differently? A group project with Bhakti Loonawat, Gabriele Jureviciute, Kedar Undale, Ozge Tektas and Wei-Hong Wang, with faculty Edouard Cabay and Rodrigo Aguirre, in the Introductory Research Studio (MAA01) at the Institute for Advanced Architecture of Catalonia (IAAC), autumn 2017 (<a href=\"https://www.iaacblog.com/programs/14-joules/\">more details</a>)."
+      Esp: # too long horizontal
+        description: "El proyecto giraba en torno a una idea sencilla: ¿qué le ocurrirá al espacio público cuando las calles queden libres de transporte privado? ¿Cómo usaríamos y diseñaríamos el espacio urbano de otra manera? Un proyecto en grupo con Bhakti Loonawat, Gabriele Jureviciute, Kedar Undale, Ozge Tektas y Wei-Hong Wang, con los profesores Edouard Cabay y Rodrigo Aguirre, en el Introductory Research Studio (MAA01) del Instituto de Arquitectura Avanzada de Cataluña (IAAC), otoño de 2017 (<a href=\"https://www.iaacblog.com/programs/14-joules/\">más detalles</a>)."
     element2:
       Eng-name:       "Site"
-      Rus-name:       "Участок"
+      Esp-name:       "Emplazamiento"
       path:          "./_data/projects/project-1/img/thumb-02.jpg"
       link:          "/project-1-slides.html?slide=2"
       path-slide:    "./_data/projects/project-1/img/slide-02.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-02-small.jpg"
       Eng:
-        description: "Site is in the heart of Barcelona on the edge of neighborhood of Barceloneta. It has a huge intersection, apart from other mobility infrastructure. To unite functional variety (from residential districts to a public museum) in a meaningful way we created coordinate system to describe urban fabric. Proposed system takes leverage of regular grids of parts of the site with fluid transition in-between."
-      Rus: # too long horizontal
-        description: "Участок находится в центре Барселоны на границе района Барселонета. Помимо большого перекрестка участок содержит много элементов транспортной инфраструктуры. Чтобы объединить функциональное разнообразие (от жилых кварталов до общественного музея) нами была разработана координационная система, описывающая характер городской структуры. Предложенная система использует частичную существующую регулярную сетку и создает плавные переходы между ними."
+        description: "The site is in the heart of Barcelona, on the edge of the Barceloneta neighborhood. Apart from other mobility infrastructure, it has a huge intersection. To unite its functional variety (from residential districts to a public museum) in a meaningful way, we created a coordinate system to describe the urban fabric. The proposed system leverages the regular grids of parts of the site, with fluid transitions in between."
+      Esp: # too long horizontal
+        description: "El emplazamiento está en el corazón de Barcelona, en el límite del barrio de la Barceloneta. Además de otras infraestructuras de movilidad, tiene un gran cruce. Para unir su variedad funcional (de zonas residenciales a un museo público) de forma coherente, creamos un sistema de coordenadas para describir el tejido urbano. El sistema propuesto aprovecha las retículas regulares de partes del emplazamiento, con transiciones fluidas entre ellas."
     element3:
       Eng-name:       "Device"
-      Rus-name:       "Инструмент"
+      Esp-name:       "Dispositivo"
       path:          "./_data/projects/project-1/img/thumb-03.jpg"
       link:          "/project-1-slides.html?slide=3"
       path-slide:    "./_data/projects/project-1/img/slide-03.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-03-small.jpg"
       Eng: # too long horizontal
-        description: "Further investigating the site I focused on relationship of visual noisiness and preference. Once there is no need to host excess of transportation visual content - a balance of visual real estate would drastically shift. To quantify it we developed a measuring device that would provide data for urban augmented reality tech in future in hopes of avoiding over-saturating. \n\n Device itself consists of: preference direction collector over an interval of time and digital comparison of the clutteredness of the views collected over 15 degree viewing intervals. Physical map of the directions by volunteers was than compared with digital analysis of the frames."
-      Rus: # too long # too long horizontal
-        description: "Дальнейшее исследование сосредоточилось на соотношении визуального шума и предпочтений. Когда город освободится от транспортной информации - баланс визуального доступного пространства пошатнётся. Чтобы оценить численно эти характеристики мы разработали инструмент, который бы снабжал данными технологии дополненной реальности города будущего для предотвращения визуального перегруза. \n\n Так девайс состоит из двух частей. Одна собирает предпочтения направления взгляда во временном промежутке. Вторая анализировала визуальную шумность кадров каждые 15 градусов. Физическая карта затем сопоставлялась с цифровым анализом видов."
+        description: "Investigating the site further, I focused on the relationship between visual noisiness and preference. Once there is no need to host an excess of transportation-related visual content, the balance of visual real estate would shift drastically. To quantify it we developed a measuring device that would provide data for future urban augmented-reality technology, in the hope of avoiding over-saturation. \n\n The device itself consists of a collector of preferred viewing directions over an interval of time, and a digital comparison of the clutteredness of the views, collected over 15-degree viewing intervals. The physical map of the directions chosen by volunteers was then compared with the digital analysis of the frames."
+      Esp: # too long # too long horizontal
+        description: "Profundizando en el emplazamiento, me centré en la relación entre el ruido visual y la preferencia. Cuando ya no haga falta alojar un exceso de contenido visual ligado al transporte, el equilibrio del espacio visual cambiaría drásticamente. Para cuantificarlo desarrollamos un dispositivo de medición que aportaría datos a la futura tecnología de realidad aumentada urbana, con la esperanza de evitar la sobresaturación. \n\n El dispositivo consiste en un registro de las direcciones de mirada preferidas durante un intervalo de tiempo y una comparación digital del grado de saturación de las vistas, tomadas en intervalos de 15 grados. El mapa físico de las direcciones elegidas por los voluntarios se comparó después con el análisis digital de los fotogramas."
     element4:
       Eng-name:       "Mapping"
-      Rus-name:       "Картография"
+      Esp-name:       "Mapeo"
       path:          "./_data/projects/project-1/img/thumb-04.jpg"
       link:          "/project-1-slides.html?slide=4"
       path-slide:    "./_data/projects/project-1/img/slide-04.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-04-small.jpg"
       Eng: # too long horizontal
-        description: "The places were chosen in direct visible contact and with contrasting characteristics. Furthermore, they had been chosen with relationship to transportation system rather than touristic routes since they ought to change as public space adapts. \n\n While two mentioned qualities are not strictly related they have underlying relationships. Surprisingly, busiest, most clustered views seemed to be attracting most views. In addition, transportation system proven to be playing a role as a detractor of views, proving the hypothesis."
-      Rus: # too long # too long horizontal
-        description: "Места для измерений были выбраны в прямой взаимной визуальной доступности, но и с наиболее контрастными качествами. Более того, выбор был более сфокусирован на транспортной системе, нежели туристических маршрутах, так как последние непременно изменятся при освобождении улиц. \n\n Несмотря на то, что две обозначенные характеристики жёстко не коррелируют, стали очевидны их взаимозависимость. Так неожиданно, более визуально шумные виды привлекали больше внимания. Помимо этого, как и предполагалось гипотезой, в текущем состоянии инфраструктура играла отталкивающую роль и направляла внимание в направлении движения."
+        description: "The places were chosen in direct visual contact with each other and with contrasting characteristics. Furthermore, they were chosen in relation to the transportation system rather than to touristic routes, since they ought to change as public space adapts. \n\n While the two qualities are not strictly related, they have underlying relationships. Surprisingly, the busiest, most cluttered views seemed to attract the most attention. In addition, the transportation system proved to act as a detractor of views, confirming the hypothesis."
+      Esp: # too long # too long horizontal
+        description: "Los lugares se eligieron en contacto visual directo entre sí y con características contrastadas. Además, se eligieron en relación con el sistema de transporte y no con las rutas turísticas, ya que deberían cambiar a medida que el espacio público se adapte. \n\n Aunque las dos cualidades no están estrictamente relacionadas, tienen relaciones subyacentes. Sorprendentemente, las vistas más concurridas y saturadas parecían atraer más la atención. Además, el sistema de transporte resultó actuar como un elemento que desvía las miradas, lo que confirmó la hipótesis."
     element5:
       Eng-name:       "Group mapping"
-      Rus-name:       "Групповая карта"
+      Esp-name:       "Mapeo de grupo"
       path:          "./_data/projects/project-1/img/thumb-05.jpg"
       link:          "/project-1-slides.html?slide=5"
       path-slide:    "./_data/projects/project-1/img/slide-05.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-05-small.jpg"
       Eng: # too long horizontal
-        description: "Three group measurement maps were overplayed to extract patterns. First noticeable correlation was that often the busiest viewing directions were in fact towards the most crowded parts of the site. Additionally, alternative transportation routes while being restricted by fixed paths of roads could be in a way correlated with the busiest locations. While the data was limited due to time constraints of the studio, these results are conclusive enough as a base for the protocol in development since it is not firmly reliant on specific data - rather on data type."
-      Rus: # too long
-        description: "Мы сопоставили три групповые карты измерений для выявления закономерностей. Так первое наблюдение заключалось в том, что часто наиболее визуально шумное, а значит притягивающее внимание, направление было в сторону наиболее плотного потока людей. Маршруты альтернативного транспорта, пусть и ограниченные фиксированными маршрутами дорог, в определённой степени соотносились с наиболее загруженными местами участка. Несмотря на ограниченность собранных данных, они были достаточными для формирования протокола развития городской среды, основанной скорее на типе данных, нежели на конкретном состоянии."
+        description: "Three group measurement maps were overlaid to extract patterns. The first noticeable correlation was that the busiest viewing directions often pointed towards the most crowded parts of the site. Additionally, alternative transportation routes, while restricted by the fixed paths of roads, could to some degree be correlated with the busiest locations. While the data was limited by the time constraints of the studio, these results are conclusive enough as a base for the protocol in development, since it relies not on specific data but on a type of data."
+      Esp: # too long
+        description: "Se superpusieron tres mapas de medición de grupo para extraer patrones. La primera correlación evidente fue que las direcciones de mirada más concurridas apuntaban a menudo hacia las partes más transitadas del emplazamiento. Además, las rutas de transporte alternativo, aunque limitadas por el trazado fijo de las calles, podían correlacionarse en cierta medida con los lugares más concurridos. Aunque los datos estaban limitados por los plazos del studio, estos resultados son lo bastante concluyentes como base para el protocolo en desarrollo, ya que no depende de datos concretos sino de un tipo de datos."
     element6:
       Eng-name:       "Concept"
-      Rus-name:       "Концепция"
+      Esp-name:       "Concepto"
       path:          "./_data/projects/project-1/img/thumb-06.jpg"
       link:          "/project-1-slides.html?slide=6"
       path-slide:    "./_data/projects/project-1/img/slide-06.gif"
       path-sm-slide: "./_data/projects/project-1/img/slide-06-small.jpg"
       Eng: # too long horizontal
-        description: "As our transportation gets more polarized and yet granulized (in terms of speed and domains), and as the efficiency of our technologies gets better - the networked distributed systems would gain popularity in all aspects of our lives, including energy. Even every human step bears kinetic energy of about 14 joules. In such a popular touristic spot with more mobility to come - the landscape of energy consumption and generation would start to resemble a continuous field rather than a grid we are used to associate to it nowadays."
-      Rus: # too long horizontal
-        description: "Вместе с тем как транспорт расширяется в области скоростных режимов и дистанций, и в тоже время как эффективность наших технологий возрастает - сетевые распределённые системы обретают популярность во всех аспектах нашей жизни, включая энергетику. Даже человеческий шаг несёт в себе кинетическую энергию в 14 Джоулей. В таком популярном туристическом месте с растущими потоками альтернативного транспорта - ландшафт генерирования и сбора энергии в городе станет напоминать поле, нежели привычная централизованная сеть."
+        description: "As our transportation becomes more polarized and yet more granular (in speed and domains), and as the efficiency of our technologies improves, networked distributed systems will gain popularity in all aspects of our lives, energy included. Even every human step bears kinetic energy of about 14 joules. In such a popular touristic spot, with more mobility to come, the landscape of energy consumption and generation would start to resemble a continuous field rather than the grid we associate it with today."
+      Esp: # too long horizontal
+        description: "A medida que nuestro transporte se vuelve más polarizado y a la vez más granular (en velocidades y ámbitos), y que la eficiencia de nuestras tecnologías mejora, los sistemas distribuidos en red ganarán presencia en todos los aspectos de nuestra vida, también en la energía. Incluso cada paso humano contiene una energía cinética de unos 14 julios. En un lugar tan turístico, y con más movilidad por venir, el paisaje del consumo y la generación de energía empezaría a parecerse a un campo continuo más que a la red con la que hoy lo asociamos."
     element7:
       Eng-name:       "Model"
-      Rus-name:       "Модель"
+      Esp-name:       "Maqueta"
       path:          "./_data/projects/project-1/img/thumb-07.jpg"
       link:          "/project-1-slides.html?slide=7"
       path-slide:    "./_data/projects/project-1/img/slide-07.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-07-small.jpg"
       Eng:
-        description: "To represent proposed protocol changes we built detailed extensive physical model. It was thought to focus on the new 'static' elements of the city and leave the potential space as open to adaptations as possible."
-      Rus:
-        description: "Чтобы продемонстрировать протокол в действии мы создали макет участка. Он фокусировался на новых статичных элементах города - оставляя свободное пространство не затронутым - свободным для интервенции протокола."
+        description: "To represent the proposed protocol changes we built a detailed, extensive physical model. It focuses on the new 'static' elements of the city and leaves the potential space as open to adaptation as possible."
+      Esp:
+        description: "Para representar los cambios del protocolo propuesto construimos una maqueta física detallada y extensa. Se centra en los nuevos elementos 'estáticos' de la ciudad y deja el espacio potencial lo más abierto posible a la adaptación."
     element8:
       Eng-name:       "Kinetic system"
-      Rus-name:       "Кинетическая система"
+      Esp-name:       "Sistema cinético"
       path:          "./_data/projects/project-1/img/thumb-08.jpg"
       link:          "/project-1-slides.html?slide=8"
       path-slide:    "./_data/projects/project-1/img/slide-08.jpg"
       path-sm-slide: "./_data/projects/project-1/img/slide-08-small.jpg"
       Eng: # too long horizontal
-        description: "While we cannot predict or directly propose a concrete prototype or a system for this fluid networked energy exchange scenario, we can provide a framework for this sort of system. As an example we took smart tiling system that could convert the potential energy we induce on the ground as we walk or drive using alternative transportation systems. The virtual layer of energy flow than was channeled dynamically through help of urban AR to create where necessary positive and negative concentrations points which intern affected back the flow of people closing the loop."
-      Rus: # too long horizontal
-        description: "И хотя мы не можем непосредственно предположить, как конкретно будет реализован протокол подобного распределенного поля энергии, мы поможем спроектировать структуру, на которой подобные прототипы смогут базироваться. Так на примере системы умных плиток, собирающие энергию движения и распределяющие далее в точки потребления. Виртуальный слой потоков энергии через дополненную реальность информирует навигацию, создавая искусственные точки притяжения и отторжения. Это в свою очередь меняет распределение энергии, закрывая цепочку."
+        description: "While we cannot predict or directly propose a concrete prototype or system for this scenario of fluid, networked energy exchange, we can provide a framework for this sort of system. As an example we took a smart tiling system that could convert the energy we exert on the ground as we walk, or move by alternative transportation. The virtual layer of energy flow was then channeled dynamically, with the help of urban AR, to create positive and negative concentration points where necessary, which in turn affected the flow of people, closing the loop."
+      Esp: # too long horizontal
+        description: "Aunque no podemos predecir ni proponer directamente un prototipo o sistema concreto para este escenario de intercambio de energía fluido y en red, sí podemos ofrecer un marco para este tipo de sistema. Como ejemplo tomamos un pavimento inteligente que podría convertir la energía que ejercemos sobre el suelo al caminar o al desplazarnos en transporte alternativo. La capa virtual de flujo de energía se canalizaba después de forma dinámica, con ayuda de la AR urbana, para crear donde hiciera falta puntos de concentración positivos y negativos, que a su vez influían en el flujo de personas y cerraban el ciclo."
     element9:
       Eng-name:       "Computation"
-      Rus-name:       "Симуляция"
+      Esp-name:       "Computación"
       path:          "./_data/projects/project-1/img/thumb-09.jpg"
       link:          "/project-1-slides.html?slide=9"
       path-slide:    "./_data/projects/project-1/img/slide-09.gif"
       path-sm-slide: "./_data/projects/project-1/img/slide-09-small.jpg"
       Eng: # too long horizontal
-        description: "The protocol was applied to a simulation of future traffic through the site. We imagined how gradually over years the boundaries of roads would get fussier and bled out more and more, how some local event should attract and detract users of the space, crating denser points of energy collection and temporarily inactive locations. Moreover, this generated energy can then be channeled into uses like smart localized street lighting. The movement of a path contributes to a whole spatial field with extra dimension of time."
-      Rus: # too long horizontal
-        description: "Протокол затем был применён к симуляции в рамках рассматриваемого временного периода. Мы представили, как постепенно границы улиц начнут размываться и растворяться, как местные события начнут возникать на участке, искажая потоки людей и, как следствие, потоки энергии. Энергия может затем локально использоваться для умного городского освещения. Энергия затем вновь информирует распределение потоков людей, вкладывая лепту в пространственно-временной портрет города."
+        description: "The protocol was applied to a simulation of future traffic through the site. We imagined how, gradually over the years, the boundaries of roads would get fuzzier and bleed out more and more, and how local events would attract and detract users of the space, creating denser points of energy collection and temporarily inactive locations. This generated energy can then be channeled into uses like smart, localized street lighting. Movement along a path contributes to a whole spatial field, with the extra dimension of time."
+      Esp: # too long horizontal
+        description: "El protocolo se aplicó a una simulación del tráfico futuro a través del emplazamiento. Imaginamos cómo, poco a poco a lo largo de los años, los límites de las calles se irían difuminando cada vez más, y cómo los eventos locales atraerían y alejarían a los usuarios del espacio, creando puntos más densos de captación de energía y lugares temporalmente inactivos. Esa energía generada puede canalizarse después hacia usos como un alumbrado público inteligente y localizado. El movimiento a lo largo de un recorrido contribuye a todo un campo espacial, con la dimensión añadida del tiempo."
     element10:
       Eng-name:       "Result"
-      Rus-name:       "Результат"
+      Esp-name:       "Resultado"
       path:          "./_data/projects/project-1/img/thumb-10.jpg"
       link:          "/project-1-slides.html?slide=10"
       path-slide:    "./_data/projects/project-1/img/slide-10.gif"
       path-sm-slide: "./_data/projects/project-1/img/slide-10-small.jpg"
       Eng:
-        description: "To sum it all up, this networked and temporal energy generation and consumption is hard to imagine spatially. Which is why we developed a set of tools to access, analyze and, based on that, characterize the space - creating a measurable way to affect the public domain with future design tools. The performance of the future estimations was projected over the model as part of the final presentation."
-      Rus:
-        description: "Итак, подобное пространственно-временное поле энергии сложно представить геометрически. Поэтому протокол сфокусировался на создании логики инструментов подобной системы, а также на разработке способа измерять и реагировать на флуктуации этого поля в рамках общественных городских функций."
+        description: "To sum it all up, this networked and temporal generation and consumption of energy is hard to imagine spatially. That is why we developed a set of tools to access, analyze and, based on that, characterize the space, creating a measurable way to affect the public domain with future design tools. The performance of the future estimations was projected over the model as part of the final presentation."
+      Esp:
+        description: "En resumen, esta generación y este consumo de energía en red y en el tiempo son difíciles de imaginar espacialmente. Por eso desarrollamos un conjunto de herramientas para acceder al espacio, analizarlo y, a partir de ello, caracterizarlo, creando una forma medible de intervenir en el dominio público con futuras herramientas de diseño. El comportamiento de las estimaciones futuras se proyectó sobre la maqueta como parte de la presentación final."
 
 project-2:
   Eng-title:       "<strong>Time</strong> restructur-<br>ization"
-  Rus-title:       "Реструктури-<br>зация <strong>времени</strong>"
-  Eng-descript:    "Investigation<br>of<br><strong>space-<br>time</strong><br>structures<br>of MArchI"
-  Rus-descript:    "Исследование<br><strong>пространственно-<br>временных</strong><br>структур<br>МАрхИ"
+  Esp-title:       "Re-<br>estructura-<br>ción del<br><strong>tiempo</strong>"
+  Eng-descript:    "Investigation<br>of<br><strong>space-<br>time</strong><br>structures<br>of MArchI<br><br>MArchI, 2017"
+  Esp-descript:    "Investigación<br>de las<br>estructuras<br>de<br><strong>espacio-<br>tiempo</strong><br>del MArchI<br><br>MArchI, 2017"
   type:           "1"
   link:           "/project-2-slides.html?slide=1"
   overview:       "/project-2.html"
@@ -141,87 +141,87 @@ project-2:
   content:
     element1:
       Eng-name:       "Description"
-      Rus-name:       "Описание"
+      Esp-name:       "Descripción"
       path:          "./_data/projects/project-2/img/thumb-01.jpg"
       link:          "/project-2-slides.html?slide=1"
       path-slide:    "./_data/projects/project-2/img/slide-01.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-01-small.jpg"
       Eng:
-        description: "Multifunctional research group 'Point of View' at Moscow Architectural Institute was analyzing and possibly proposing improvements in quality of spaces and experience. The goal for 'System' branch specifically was to create an up-to-date model of its historic buildings in use and through computational tools, such as BIM, GIS, etc., look for patterns and problems we could address."
-      Rus: # too long horizontal
-        description: "Многофункциональная исследовательская группа 'Точка зрения' анализировала и разрабатывала потенциальные шаги интервенции в Московском Архитектурном Институте для улучшения качества пространств и опыта в целом. Цель направления 'Система' в этом контексте фокусировалась на создании действующей модели исторического здания и с помощью инструментов компьютерного проектирования (таких как BIM, GIS и т.д.), чтобы выявить скрытые закономерности и незатронутый потенциал."
+        description: "The multifunctional research group 'Point of View' at the Moscow Architectural Institute (MArchI) analyzed the quality of the institute's spaces and the experience of them, with a view to proposing improvements, in 2017. The goal of its 'System' branch specifically was to create an up-to-date model of the historic buildings in use and, through computational tools such as BIM and GIS, to look for patterns and problems we could address."
+      Esp: # too long horizontal
+        description: "El grupo de investigación multifuncional 'Point of View' del Instituto de Arquitectura de Moscú (MArchI) analizó en 2017 la calidad de los espacios del instituto y la experiencia de quienes los usan, con vistas a proponer mejoras. El objetivo de su rama 'System' en particular era crear un modelo actualizado de los edificios históricos en uso y, mediante herramientas computacionales como BIM y GIS, buscar patrones y problemas que pudiéramos abordar."
     element2:
       Eng-name:       "Project Context"
-      Rus-name:       "Контекст"
+      Esp-name:       "Contexto"
       path:          "./_data/projects/project-2/img/thumb-02.jpg"
       link:          "/project-2-slides.html?slide=2"
       path-slide:    "./_data/projects/project-2/img/slide-02.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-02-small.jpg"
       Eng:
-        description: "From the start the goal was not so much to visualize but rather unveil hidden layers of environment parameters. As part of the process we experimented with various data-points: simulated sunlight exposure, inventorization data, schedule and occupation information, mood and impression questionnaires. This post focuses on intervention for timetable."
-      Rus: # too long horizontal
-        description: "С самого начала целью было не столько визуализация, нежели выявление скрытых характеристик пространства. В процессе мы экспериментировали с различными параметрами: симуляции освещенности аудиторий, инвентаризационные данные, расписание и информация занятости аудиторий, опросы настроения и впечатлений. Этот пост фокусируется на исследование и разработке в области расписания."
+        description: "From the start the goal was not so much to visualize as to unveil hidden layers of environmental parameters. As part of the process we experimented with various data points: simulated sunlight exposure, inventory data, schedule and occupancy information, mood and impression questionnaires. This project focuses on the intervention in the timetable."
+      Esp: # too long horizontal
+        description: "Desde el principio el objetivo no era tanto visualizar como desvelar capas ocultas de parámetros del entorno. Como parte del proceso experimentamos con diversos datos: soleamiento simulado, datos de inventario, información de horarios y ocupación, cuestionarios de estado de ánimo e impresiones. Este proyecto se centra en la intervención en el horario."
     element3:
       Eng-name:       "Current State"
-      Rus-name:       "Текущее состояние"
+      Esp-name:       "Estado actual"
       path:          "./_data/projects/project-2/img/thumb-03.jpg"
       link:          "/project-2-slides.html?slide=3"
       path-slide:    "./_data/projects/project-2/img/slide-03.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-03-small.jpg"
       Eng: # too long horizontal
-        description: "As of today the system of generating the timetable remains manual. Furthermore, even the presentation remains practically drawn in. The structure of studies indeed requires rather complicated expert system to navigate: multiple buildings (hosting both students and administration), short-term events, varying dedicated time per subject per period, varying approaches to group divisions by subjects etc. Moreover, working this way the created timetable is targeted for students and is not as comfortably useful for administration. The question arose: could we without drastically changing the structure simplify it to be analytical and thus optimizable?"
-      Rus: # too long # too long horizontal
-        description: "На текущий момент процесс создания расписания в большой степени ручной. Более того, репрезентация его также практически рисуется вручную. Структура для обращения действительно требует сложную экспертную модель, сочетая в себя множество зданий (как для администрации, так и для студентов), кратковременные мероприятия, варьирующееся время, отведенное для предметов по семестрам, варьирующийся подход к разделению групп по предметам и так далее. Более того сгенерированное таким образом расписание интуитивно не может быть использовано остальными участниками процесса. Таким образом, возник вопрос, можем ли мы без значительного нарушения учебного процесса упростить структуру, чтоб та стала анализируемой, а значит и оптимизируемой."
+        description: "At the time, the timetable was generated by hand, and even its presentation was practically drawn by hand. The structure of studies indeed requires a rather complicated expert system to navigate: multiple buildings (hosting both students and administration), short-term events, varying time dedicated to each subject per period, varying approaches to dividing groups by subject, etc. Moreover, a timetable created this way is aimed at students and is not as useful to the administration. The question arose: could we, without drastically changing the structure, simplify it to be analytical and thus optimizable?"
+      Esp: # too long # too long horizontal
+        description: "En aquel momento el horario se generaba a mano, e incluso su presentación se dibujaba prácticamente a mano. La estructura de los estudios requiere, en efecto, un sistema experto bastante complicado para orientarse: varios edificios (que acogen tanto a estudiantes como a la administración), eventos de corta duración, distinto tiempo dedicado a cada asignatura por periodo, distintas formas de dividir los grupos por asignatura, etc. Además, un horario creado así está pensado para los estudiantes y no resulta igual de útil para la administración. Surgió la pregunta: ¿podríamos, sin cambiar drásticamente la estructura, simplificarla para que fuera analítica y, por tanto, optimizable?"
     element4:
       Eng-name:       "Category Development"
-      Rus-name:       "Выявление Категорий"
+      Esp-name:       "Categorías"
       path:          "./_data/projects/project-2/img/thumb-04.jpg"
       link:          "/project-2-slides.html?slide=4"
       path-slide:    "./_data/projects/project-2/img/slide-04.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-04-small.jpg"
       Eng:
-        description: "First major break-through came from going even more detailed and fragmented. We decided to take one hypothetical event and list all possible qualities it could have from building to teacher, from weekday to students attending etc. Grouping all of them revealed that all that complexity can be distilled into 4 compiled data structures."
-      Rus:
-        description: "Первое крупное достижение пришло, наоборот, от углубления в еще более дроблёное и детализированное состояние. Мы вычленили одно мероприятие из расписания и перечислили все характеристики, какие могут его уникально сформулировать: от здания до преподавателя, от дня недели, до присутствующих групп и т.д. Сгруппировав их между собой, из всей этой сложной структуры вышли всего 4 расширенных категории."
+        description: "The first major breakthrough came from going even more detailed and fragmented. We took one hypothetical event and listed all the qualities it could have, from building to teacher, from weekday to the students attending, etc. Grouping them all revealed that all that complexity can be distilled into four compiled data structures."
+      Esp:
+        description: "El primer gran avance llegó al ir aún más al detalle y fragmentar más. Tomamos un evento hipotético y enumeramos todas las cualidades que podía tener, del edificio al profesor, del día de la semana a los estudiantes que asisten, etc. Agruparlas reveló que toda esa complejidad puede destilarse en cuatro estructuras de datos compuestas."
     element5:
       Eng-name:       "Data Architecture"
-      Rus-name:       "Архитектура Данных"
+      Esp-name:       "Arquitectura de datos"
       path:          "./_data/projects/project-2/img/thumb-05.jpg"
       link:          "/project-2-slides.html?slide=5"
       path-slide:    "./_data/projects/project-2/img/slide-05.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-05-small.jpg"
       Eng:
-        description: "Thus not going too far in details we developed a model of institute activity. With 'Time', 'Place', 'Subject' and 'Students' - each necessarily playing their role in all of the events in different combinations. So for a subject from one division with 3 groups from a course in one timeslot of a week and with one teacher in one room on one floor in one building we listed three 'Events'."
-      Rus:
-        description: "Так, не углубляясь в излишние подробности, мы разработали модель активности здания, где каждое событие характеризуется 'Время', 'Место', 'Предмет' и 'Студенты'. Например, одна пара с одной кафедры у трёх групп с одного курса в одно время в одну неделю преподаваемое одним преподавателем в одной аудитории на одном этаже в одном из зданий мы создавали три 'События'."
+        description: "Thus, without going too far into detail, we developed a model of the institute's activity, with 'Time', 'Place', 'Subject' and 'Students' each necessarily playing its role in every event, in different combinations. So for a subject from one department, with three groups from one year of study, in one timeslot of a week, with one teacher in one room on one floor of one building, we listed three 'Events'."
+      Esp:
+        description: "Así, sin entrar demasiado en detalle, desarrollamos un modelo de la actividad del instituto, en el que 'Tiempo', 'Lugar', 'Asignatura' y 'Estudiantes' desempeñan necesariamente su papel en cada evento, en distintas combinaciones. Así, para una asignatura de un departamento, con tres grupos de un mismo curso, en una franja horaria de la semana, con un profesor en un aula de una planta de un edificio, registramos tres 'Eventos'."
     element6:
       Eng-name:       "Table"
-      Rus-name:       "Таблица"
+      Esp-name:       "Tabla"
       path:          "./_data/projects/project-2/img/thumb-06.jpg"
       link:          "/project-2-slides.html?slide=6"
       path-slide:    "./_data/projects/project-2/img/slide-06.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-06-small.jpg"
       Eng: # too long horizontal
-        description: "This meant that we could treat all the complexity as a database. Moreover, if further down we could merge this dataset with various others such as inventory data, sun light exposure of rooms, preferences of the teachers or even real-time air quality data - we could implement a complex and interactive big-data driven workflow. Plus it would work with a principle of projections various queries for certain points of interest with unique relevance to the data (table for the room activity, table for per teacher activities, etc.)."
-      Rus: # too long horizontal
-        description: "Это значило, что мы можем интерпретировать всю эту сложную структуру как базу данных. Более того, если впоследствии совместить ее с прочими источниками данных: инвентаризация, освещенность аудиторий, предпочтения преподавателей или даже данные о качестве воздуха в реальном времени. Плюс система будет функционировать по принципу проекций - различные данные актуальны для разных функций в различных форматах (таблица активности в конкретной аудитории, таблица занятий для каждого преподавателя, и т.д.)."
+        description: "This meant that we could treat all the complexity as a database. Moreover, if we could later merge this dataset with others, such as inventory data, the sunlight exposure of rooms, teachers' preferences or even real-time air-quality data, we could implement a complex, interactive, big-data-driven workflow. It would also work on the principle of projections: queries for particular points of interest, each with its own relevance to the data (a table of a room's activity, a table of each teacher's activities, etc.)."
+      Esp: # too long horizontal
+        description: "Esto significaba que podíamos tratar toda la complejidad como una base de datos. Además, si más adelante pudiéramos combinar este conjunto de datos con otros, como los datos de inventario, el soleamiento de las aulas, las preferencias de los profesores o incluso la calidad del aire en tiempo real, podríamos implementar un flujo de trabajo complejo, interactivo y basado en big data. Funcionaría además según el principio de las proyecciones: consultas para puntos de interés concretos, cada una con su propia relevancia respecto a los datos (una tabla de la actividad de un aula, una tabla de las actividades de cada profesor, etc.)."
     element7:
       Eng-name:       "Model Correlation"
-      Rus-name:       "Корреляция"
+      Esp-name:       "Correlación con el modelo"
       path:          "./_data/projects/project-2/img/thumb-07.jpg"
       link:          "/project-2-slides.html?slide=7"
       path-slide:    "./_data/projects/project-2/img/slide-07.jpg"
       path-sm-slide: "./_data/projects/project-2/img/slide-07-small.jpg"
       Eng: # too long horizontal
-        description: "That would potentially remain in forms of tables and numbers, but having done BIM-model of buildings we focused on demonstrating power and unique perspective of spatial visualization and temporal animations the model + data could bring through building GIS. Thus the example we generated were among others spatial distribution of events by subject departments, densities of usage of the spaces, comparison of individual timetable in the rooms. \n Unfortunately, at this point administration considered this system too big of change and continued using previous approach."
-      Rus: # too long horizontal
-        description: "Эта система могла остаться лишь выборками данных. Однако, имея BIM модель здания, мы сфокусировались на демонстрации силы и уникальности пространственная перспектива и временные анимации способны внести в процесс работы с расписание посредством GIS. Мы сделали несколько примеров таких выборок: распределение мероприятий по кафедрам, плотность загрузки аудиторий, сопоставление расписаний различных аудиторий. \n К сожалению, на данный момент администрация сочла данную системы слишком большим изменением и сохранила предыдущий подход."
+        description: "That could remain in the form of tables and numbers, but having built a BIM model of the buildings, we focused on demonstrating the power and unique perspective that spatial visualization and temporal animation of the model and data could bring, through building GIS. The examples we generated included the spatial distribution of events by department, the density of use of the spaces, and a comparison of individual timetables in the rooms. \n Unfortunately, at this point the administration considered the system too big a change and continued with the previous approach."
+      Esp: # too long horizontal
+        description: "Todo eso podría quedarse en tablas y números, pero, con un modelo BIM de los edificios ya hecho, nos centramos en demostrar la potencia y la perspectiva única que la visualización espacial y la animación temporal del modelo y los datos podían aportar, mediante un GIS del edificio. Entre los ejemplos que generamos estaban la distribución espacial de los eventos por departamento, la densidad de uso de los espacios y una comparación de los horarios individuales de las aulas. \n Por desgracia, llegados a este punto la administración consideró el sistema un cambio demasiado grande y siguió con el método anterior."
 
 project-3:
   Eng-title:       "<strong>Multi</strong><br>data<br>centre"
-  Rus-title:       "<strong>Инфо</strong><br>Центр<br>"
-  Eng-descript:    "Bachelor<br>thesis<br>project<br>of multi-<br>functional<br><strong>data-<br>center</strong>"
-  Rus-descript:    "Дипломный<br>бакалаврский<br>проект<br>много-<br>функционального<br><strong>дата-<br>центра</strong>"
+  Esp-title:       "<strong>Multi</strong><br>centro<br>de datos"
+  Eng-descript:    "Bachelor<br>thesis<br>project<br>of multi-<br>functional<br><strong>data-<br>center</strong><br><br>MArchI, 2017"
+  Esp-descript:    "Proyecto<br>final<br>de grado:<br>un<br><strong>centro<br>de datos</strong><br>multi-<br>funcional<br><br>MArchI, 2017"
   type:           "2"
   link:           "/project-3-slides.html?slide=1"
   overview:       "/project-3.html"
@@ -230,98 +230,98 @@ project-3:
   content:
     element1:
       Eng-name:       "Task"
-      Rus-name:       "Задача"
+      Esp-name:       "Encargo"
       path:          "./_data/projects/project-3/img/thumb-01.jpg"
       link:          "/project-3-slides.html?slide=1"
       path-slide:    "./_data/projects/project-3/img/slide-01.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-01-small.jpg"
       Eng:
-        description: "This project was executed during last 5 month of bachelor studies as a thesis project. General approach followed by the curriculum is to task students in making large-scale complex that equivocally includes separate functions. Students get to choose the location and the role the project has to be grounded by site research."
-      Rus:
-        description: "Этот выпускной проект был выполнен в последний семестр учёбы на бакалавриате. В общих чертах подход следовал программе: студенты проектируют крупномасштабный многофункциональный комплекс, где разные функции выражены в равной степени. Место и функция комплекса выбирается студентом, но должно быть хорошо обосновано."
+        description: "This project was carried out over the last five months of bachelor studies at the Moscow Architectural Institute (MArchI), as a thesis project, in 2017. The general approach of the curriculum is to task students with designing a large-scale complex that includes separate functions in equal measure. Students choose the location and the role of the project, which have to be grounded in site research."
+      Esp:
+        description: "Este proyecto se realizó durante los últimos cinco meses de la carrera en el Instituto de Arquitectura de Moscú (MArchI), como proyecto final de grado, en 2017. El planteamiento general del plan de estudios es encargar a los estudiantes el diseño de un complejo a gran escala que incluya distintas funciones en igual medida. Los estudiantes eligen el lugar y el papel del proyecto, que deben fundamentarse en el estudio del emplazamiento."
     element2:
       Eng-name:       "Site"
-      Rus-name:       "Участок"
+      Esp-name:       "Emplazamiento"
       path:          "./_data/projects/project-3/img/thumb-02.jpg"
       link:          "/project-3-slides.html?slide=2"
       path-slide:    "./_data/projects/project-3/img/slide-02.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-02-small.jpg"
       Eng: # too long horizontal
-        description: "My general interest laid in direction of IT related functionality so the site of the most relevance became clear quickly - outdated expo/data center next to new CBD in Moscow - Moscow City. \n Being relatively clear the site presented challenges as it existed on the outskirts of a strong city module and lay in-between major areas of city infrastructure. Moreover, functionally the area grew to be extremely divided so the object had to address the issue as well."
-      Rus: # too long horizontal
-        description: "Общая роль, которую мне хотелось адресовать стали IT, так что в Москве участок стал быстро очевиден - устаревший экспо-/дата-центр при бизнес-центре Москва-Сити. \n Несмотря на сравнительную пустоту участка, он представлял определённые сложности. Так, он находится на границе крупного и обособленного городского модуля, и должен каким-то образом включиться в среду. Функциональное наполнение района сильно разобщено и объект должен каким-то образом адресовать проблему. Более того, участок зажат между крупными инфраструктурными венами города, с сопутствующим шумовым и прочим загрязнением."
+        description: "My general interest lay in IT-related functions, so the most relevant site quickly became clear: an outdated expo and data center next to Moscow's new business district, Moscow City. \n Though relatively clear, the site presented challenges: it lay on the outskirts of a strong city module, between major areas of city infrastructure. Moreover, functionally the area had grown extremely divided, so the building had to address that as well."
+      Esp: # too long horizontal
+        description: "Mi interés general se orientaba a funciones relacionadas con las TI, así que el emplazamiento más pertinente quedó claro enseguida: un antiguo recinto ferial y centro de datos junto al nuevo distrito de negocios de Moscú, Moscow City. \n Aunque relativamente despejado, el emplazamiento planteaba retos: estaba en el borde de un módulo urbano muy marcado, entre grandes áreas de infraestructura de la ciudad. Además, funcionalmente la zona se había vuelto muy fragmentada, y el edificio también tenía que responder a ello."
     element3:
       Eng-name:       "Background"
-      Rus-name:       "Контекст"
+      Esp-name:       "Contexto"
       path:          "./_data/projects/project-3/img/thumb-03.jpg"
       link:          "/project-3-slides.html?slide=3"
       path-slide:    "./_data/projects/project-3/img/slide-03.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-03-small.jpg"
       Eng:
-        description: "Thus digging further in, the place was on the side of the gate-road to the city for a long time and it remained unplanned until 1930s. The area now though is accessible by basically all means of transport including even river-trams. \n Additionally the area remained low to middle height of edification until the Moscow City Complex was erected out of context. \n These properties present reach pool of potential and interesting limitations to work in."
-      Rus: # too long horizontal
-        description: "Так углубляясь в историю и устройство участка, оказалось, что он находился рядом с крупной входной зоной участка и таким образом оставался хаотичным до 1930ых. С другой стороны, сейчас участок доступен посредством практически всех видов транспорта, включая даже водный трамвай. \n Более того, до возведения нового, во многом вырванного из контекста комплекса Москва-Сити застройка сохранялась малой и средней этажности. \n Эти условия формировали богатый потенциал для проектирования, при этом создавая интересные ограничения."
+        description: "Digging further, the place had long stood beside one of the gate roads into the city, and it remained unplanned until the 1930s. Now, though, the area is accessible by practically every means of transport, even river trams. \n Additionally, the area's buildings remained of low to middle height until the Moscow City complex was erected, out of context. \n These properties present a rich pool of potential and interesting limitations to work in."
+      Esp: # too long horizontal
+        description: "Profundizando, el lugar estuvo durante mucho tiempo junto a una de las vías de entrada a la ciudad, y no se planificó hasta los años treinta. Hoy, sin embargo, la zona es accesible prácticamente con cualquier medio de transporte, incluso en tranvía fluvial. \n Además, la edificación de la zona se mantuvo de altura baja y media hasta que se levantó el complejo Moscow City, fuera de contexto. \n Estas características ofrecen un gran potencial y limitaciones interesantes con las que trabajar."
     element4:
       Eng-name:       "Function"
-      Rus-name:       "Функция"
+      Esp-name:       "Función"
       path:          "./_data/projects/project-3/img/thumb-04.jpg"
       link:          "/project-3-slides.html?slide=4"
       path-slide:    "./_data/projects/project-3/img/slide-04.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-04-small.jpg"
       Eng: # too long horizontal
-        description: "Having geographical proximity to one of the city's internet entry points the object ought to capitalize on that through extensive data-centre functionality. Accessibility and rapid residential development meant inclusion of educational programs to shorten the gap of intellectual specialist needed for IT activities of the area. With the business playing major attracting role in area development the center had to include various workspace activities as well. Cleared area included hotel functionality which had to be compensated either."
-      Rus: # too long horizontal
-        description: "Будучи в прямой географической доступности к крупному узлу доступа сети интернет в город, объект должен капитализировать на этом посредством вмещения дата центра. Доступность к быстро развивающейся жилой застройки вокруг комплекса, означала общественные и образовательные функции, способствующие повышению IT образованности населения. А для насыщенной бизнес среды, центр должен создать рабочее пространство входного уровня, привлекая малый бизнес. Помимо этого, центр должен компенсировать отель, находящийся на территории под снос."
+        description: "Being geographically close to one of the city's internet entry points, the building ought to capitalize on it with an extensive data centre. Accessibility and rapid residential development meant including educational programs, to narrow the gap in the specialists the area's IT activities need. With business playing a major role in attracting development to the area, the centre had to include various workspaces as well. The cleared area had included a hotel, which had to be replaced too."
+      Esp: # too long horizontal
+        description: "Al estar geográficamente cerca de uno de los puntos de entrada de internet a la ciudad, el edificio debía aprovecharlo con un amplio centro de datos. La accesibilidad y el rápido desarrollo residencial suponían incluir programas educativos, para reducir la falta de especialistas que necesitan las actividades de TI de la zona. Como los negocios desempeñan un papel clave en atraer desarrollo a la zona, el centro debía incluir también diversos espacios de trabajo. La zona despejada había incluido un hotel, que también había que reponer."
     element5:
       Eng-name:       "Volume"
-      Rus-name:       "Объём"
+      Esp-name:       "Volumen"
       path:          "./_data/projects/project-3/img/thumb-05.jpg"
       link:          "/project-3-slides.html?slide=5"
       path-slide:    "./_data/projects/project-3/img/slide-05.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-05-small.jpg"
       Eng: # too long horizontal
-        description: "Each of these 4 branches of activity implied unique spatial conditions. For instance, servers do not require natural sunlight exposure and need maximum cooling possible throughout the year, while hotel had to open up to the most prospective views increasing its value. \n This tangled interconnected mess was resolved creating a semi-open yard centered structure with business and hotel occupying outer ring and public functions forming internal yard with separated by shifted levels, driving data center under the yard itself."
-      Rus: # too long horizontal
-        description: "Каждая из этих четырёх функций подразумевает контрастную пространственную структуру. Например, сервера не требуют естественного освещения и нуждаются в максимальном охлаждении в любое время года. Отель же наоборот нуждается в максимальной открытости и в наличии наиболее перспективных видов на город. \n Эта перемешанная смесь задач была решена посредством полуоткрытого внутреннего двора. Бизнес и отельные функции были отодвинуты на внешнее кольцо, а общественные и учебные - формировали внутренний двор, разделяясь сбивкой этажей. Сервера дата-центра же задвигались под сам двор."
+        description: "Each of these four branches of activity implied unique spatial conditions. For instance, servers do not need natural sunlight and need as much cooling as possible throughout the year, while the hotel had to open up to the most prospective views, increasing its value. \n This tangled, interconnected mess was resolved by creating a structure centred on a semi-open yard: business and hotel occupy the outer ring, public functions form the internal yard, separated by shifted levels, and the data centre is driven under the yard itself."
+      Esp: # too long horizontal
+        description: "Cada una de estas cuatro ramas de actividad implicaba condiciones espaciales propias. Por ejemplo, los servidores no necesitan luz natural y requieren la máxima refrigeración posible durante todo el año, mientras que el hotel debía abrirse a las mejores vistas, que aumentan su valor. \n Este enredo de relaciones se resolvió con una estructura centrada en un patio semiabierto: los negocios y el hotel ocupan el anillo exterior, las funciones públicas forman el patio interior, separadas por niveles desplazados, y el centro de datos queda bajo el propio patio."
     element6:
       Eng-name:       "Prints"
-      Rus-name:       "Чертежи"
+      Esp-name:       "Planos"
       path:          "./_data/projects/project-3/img/thumb-06.jpg"
       link:          "/project-3-slides.html?slide=6"
       path-slide:    "./_data/projects/project-3/img/slide-06.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-06-small.jpg"
       Eng:
-        description: "Regulation-wise the challenge was in maintaining functional purity and balance with security and emergency practices. This was resolved by interlinking two modular axis grids creating dynamic carcass solution partly punctured and partly linked by vertical infrastructure and communications."
-      Rus:
-        description: "С точки зрения пожарной и общей безопасности в здании нужно было соблюсти функциональную обособленность и интуитивную доступность. Чтобы решить это были введены две гибкие модульные решётки осей, перфорированные и одновременно объединённые вертикальными коммуникациями и конструкциями."
+        description: "In terms of regulations, the challenge was in keeping the functions distinct while balancing them with security and emergency practices. This was resolved by interlinking two modular axis grids, creating a dynamic frame, partly punctured and partly linked by vertical infrastructure and communications."
+      Esp:
+        description: "En cuanto a la normativa, el reto era mantener las funciones diferenciadas y equilibrarlas con las prácticas de seguridad y emergencia. Se resolvió entrelazando dos retículas modulares de ejes, que crean una estructura dinámica, en parte perforada y en parte unida por infraestructuras y comunicaciones verticales."
     element7:
       Eng-name:       "Interior"
-      Rus-name:       "Интерьер"
+      Esp-name:       "Interior"
       path:          "./_data/projects/project-3/img/thumb-07.jpg"
       link:          "/project-3-slides.html?slide=7"
       path-slide:    "./_data/projects/project-3/img/slide-07.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-07-small.jpg"
       Eng:
-        description: "Multilayered environment resulted in a curious spatial configuration intriguing with its unpredictability but rigid in its order. Moreover, the common halls and areas between business and education in such a space would encourage potential interaction and experience exchange."
-      Rus:
-        description: "Многослойная конфигурация пространства создала интригующий эффект сочетая непредсказуемость и организованность. Более того, общие пространства холла между бизнес и общественными блоками стали бы катализатором развития и инноваций."
+        description: "The multilayered environment resulted in a curious spatial configuration, intriguing in its unpredictability but rigid in its order. Moreover, the common halls and areas between business and education in such a space would encourage interaction and the exchange of experience."
+      Esp:
+        description: "El entorno de múltiples capas dio lugar a una configuración espacial curiosa, intrigante por su imprevisibilidad pero rígida en su orden. Además, los vestíbulos y zonas comunes entre los negocios y la educación en un espacio así fomentarían la interacción y el intercambio de experiencias."
     element8:
-      Rus-name:       "Экстерьер"
       Eng-name:       "Exterior"
+      Esp-name:       "Exterior"
       path:          "./_data/projects/project-3/img/thumb-08.jpg"
       link:          "/project-3-slides.html?slide=8"
       path-slide:    "./_data/projects/project-3/img/slide-08.jpg"
       path-sm-slide: "./_data/projects/project-3/img/slide-08-small.jpg"
       Eng:
-        description: "Externally The building responded most directly to the functional filling. The ordered and systematic business front is simple and planar sheltering the building from surrounding overly high sound pollution, public yard opens to the classrooms and auditoria thus is more granular and fully transparent and open inside."
-      Rus:
-        description: "Внешне здание наиболее буквально отвечает внутреннему наполнению. Снаружи здание защищает от внешнего шума простым и плоскостным фасадом, тогда как со двора общественные задачи, будучи более гибкими и динамичными открывается дроблёнными и в тоже время, прозрачными модулями лекционных помещений, создавая доступный с улицы каскад вокруг двора."
+        description: "Externally the building responds most directly to its functions. The ordered, systematic business front is simple and planar, sheltering the building from the heavy noise pollution around it; the public yard opens to the classrooms and auditoria, and is therefore more granular, fully transparent and open inside."
+      Esp:
+        description: "Hacia el exterior, el edificio responde de la forma más directa a sus funciones. La fachada de negocios, ordenada y sistemática, es sencilla y plana, y protege el edificio de la intensa contaminación acústica de su entorno; el patio público se abre a las aulas y los auditorios, y es por ello más granular, totalmente transparente y abierto hacia dentro."
 
 project-4:
   Eng-title:       "Foggy <br><strong>Space</strong><br>frame"
-  Rus-title:       "Облачный<br><strong>разделитель</strong>"
-  Eng-descript:    "Student<br>project<br>of <strong>digitally<br>fabricated</strong><br>space<br>separator"
-  Rus-descript:    "Студенческий<br>проект<br><strong>параметрически<br>произведённый</strong><br>пространственного<br>разделителя"
+  Esp-title:       "Foggy <br><strong>Space</strong><br>frame"
+  Eng-descript:    "Student<br>project<br>of <strong>digitally<br>fabricated</strong><br>space<br>separator<br><br>IAAC, 2017–18"
+  Esp-descript:    "Proyecto<br>de estudiante:<br>un separador<br>de espacio<br><strong>fabricado<br>digitalmente</strong><br><br>IAAC, 2017–18"
   type:           "5"
   link:           "/project-4-slides.html?slide=1"
   overview:       "/project-4.html"
@@ -330,98 +330,98 @@ project-4:
   content:
     element1:
       Eng-name:       "Task"
-      Rus-name:       "Задача"
+      Esp-name:       "Encargo"
       path:          "./_data/projects/project-4/img/thumb-01.jpg"
       link:          "/project-4-slides.html?slide=1"
       path-slide:    "./_data/projects/project-4/img/slide-01.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-01-small.jpg"
       Eng: # too long horizontal
-        description: "For this project given fixed dimensions of the frame and utilizing only, in our case, 3D printing and specific materials, we were tasked to develop a space divider for an open-plan workspace in the Institute of Advanced Architecture. The project done with Jasser Joan Salas Castro, Nustrat Tabassum, Ifthikar Mohamed Noordeen under supervision of Alex Dubor, Raimund Krenmuller, Ricardo Valbuena, Ricardo Mayor, Kunaljit Singh Chadha. <a href='http://www.iaacblog.com/programs/foggy-spaceframe/'>More details here.</a>"
-      Rus: # too long horizontal
-        description: "Для этого проекта, имея фиксированные габариты рамы и ограничиваясь использованием, в нашем случае, 3Д-печати и определённых материалов, мы должны были создать разделитель для рабочего пространства с открытой планировкой у нас же в институте. Проект выполнен совместно с Йассером Джоан Салас Кастро, Нустрат Табассум, Ифтикаром Мохамедом под руководством Алекса Дубора, Реймунда Кренмюллера, Рикаро Валбуэна, Рикардо Майора и Куналджита Сингх Чадха. <a href='http://www.iaacblog.com/programs/foggy-spaceframe/'>Больше деталей можно найти тут.</a>"
+        description: "For this project, given the fixed dimensions of the frame and using only, in our case, 3D printing and specific materials, we were tasked with developing a space divider for an open-plan workspace at the Institute for Advanced Architecture of Catalonia (IAAC), in Introduction to Digital Fabrication (MAA01), 2017–18. The project was done with Jasser Joan Salas Castro, Nustrat Tabassum and Ifthikar Mohamed Noordeen, under the supervision of Alex Dubor, Raimund Krenmüller, Ricardo Valbuena, Ricardo Mayor and Kunaljit Singh Chadha. <a href='https://www.iaacblog.com/programs/foggy-spaceframe/'>More details here.</a>"
+      Esp: # too long horizontal
+        description: "En este proyecto, con las dimensiones fijas del marco y usando solo, en nuestro caso, impresión 3D y materiales concretos, se nos encargó desarrollar un separador de espacios para una zona de trabajo diáfana del Instituto de Arquitectura Avanzada de Cataluña (IAAC), en Introduction to Digital Fabrication (MAA01), 2017–18. El proyecto se hizo con Jasser Joan Salas Castro, Nustrat Tabassum e Ifthikar Mohamed Noordeen, bajo la supervisión de Alex Dubor, Raimund Krenmüller, Ricardo Valbuena, Ricardo Mayor y Kunaljit Singh Chadha. <a href='https://www.iaacblog.com/programs/foggy-spaceframe/'>Más detalles aquí.</a>"
     element2:
       Eng-name:       "Prototype 1"
-      Rus-name:       "Прототип 1"
+      Esp-name:       "Prototipo 1"
       path:          "./_data/projects/project-4/img/thumb-02.jpg"
       link:          "/project-4-slides.html?slide=2"
       path-slide:    "./_data/projects/project-4/img/slide-02.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-02-small.jpg"
       Eng:
-        description: "Having fixed structural strategy we decided to interpret the structure as a whole and explore potential of unique and flexible elements. The resulting piece though had to be drastically shrunk. Moreover, through experiment we realized that not only does the piece have certain freedom in conjunction with the rods, the design itself can be much more flexible since production time practically does not depend on piece variability."
-      Rus: # too long horizontal
-        description: "Имея жёсткую стратегию для структуры по заданию, мы решили интерпретировать наш объект как единую систему и придать разнообразия и гибкости отдельным элементам. Разработанный элемент, однако, требовалось значительно уменьшить. Помимо этого, посредством экспериментов мы решили значительно увеличить степени свободы самого дизайна элемента и играть не только на взаимоотношении узлов со стержнями, но и за счёт разнообразия элементов, что задействует уникальный потенциал 3Д печати, так как нет значительной разницы во времени печати, в зависимости от узла."
+        description: "Having fixed the structural strategy, we decided to interpret the structure as a whole and explore the potential of unique, flexible elements. The resulting piece, though, had to be drastically shrunk. Moreover, through experiment we realized that not only does the piece have a certain freedom where it joins the rods, but the design itself can be much more flexible, since production time hardly depends on how varied the pieces are."
+      Esp: # too long horizontal
+        description: "Una vez fijada la estrategia estructural, decidimos interpretar la estructura como un todo y explorar el potencial de elementos únicos y flexibles. Sin embargo, la pieza resultante tuvo que reducirse drásticamente. Además, experimentando nos dimos cuenta de que la pieza no solo tiene cierta libertad en su unión con las varillas, sino que el propio diseño puede ser mucho más flexible, ya que el tiempo de producción apenas depende de lo variadas que sean las piezas."
     element3:
       Eng-name:       "System 2"
-      Rus-name:       "Типология 2"
+      Esp-name:       "Sistema 2"
       path:          "./_data/projects/project-4/img/thumb-03.jpg"
       link:          "/project-4-slides.html?slide=3"
       path-slide:    "./_data/projects/project-4/img/slide-03.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-03-small.jpg"
       Eng:
-        description: "Thus, instead of fixed angle access the nodes were generated parametrically based on a network of lines. The pieces could maintain features like through-out movable rods for more interactive experience. Additionally in order to preserve fabric we introduced cap elements for the rods."
-      Rus:
-        description: "Так вместо жёстких углов мы параметрически создали звенья, основываясь на пространственной сети линий. Были сохранены узлы с возможностью использования сквозных стержней, для более интерактивного взаимодействия с объектом. Помимо этого, мы создали элементы покрыть концы стержней для сохранения ткани."
+        description: "Thus, instead of fixed access angles, the nodes were generated parametrically from a network of lines. The pieces could keep features like rods movable all the way through, for a more interactive experience. Additionally, to protect the fabric, we introduced caps for the rods."
+      Esp:
+        description: "Así, en lugar de ángulos de acceso fijos, los nodos se generaron paramétricamente a partir de una red de líneas. Las piezas podían conservar rasgos como varillas que se deslizan de lado a lado, para una experiencia más interactiva. Además, para proteger la tela, añadimos tapones a las varillas."
     element4:
       Eng-name:       "System"
-      Rus-name:       "Проект"
+      Esp-name:       "Sistema"
       path:          "./_data/projects/project-4/img/thumb-04.jpg"
       link:          "/project-4-slides.html?slide=4"
       path-slide:    "./_data/projects/project-4/img/slide-04.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-04-small.jpg"
       Eng:
-        description: "Overall with the design we decided to try instead of developing fixture pieces to create tensile structure fully held by the fabric itself. So the rigid network of nodes and rods between them could be designed and assembled separately and introduced between two layers of flexible fabric leaving it functional for potential changes."
-      Rus:
-        description: "Для дизайна самой структуры мы решили не фиксироваться к ткани или к раме, а сделать висячую систему, зажатую между двумя натянутыми эластичными слоями ткани. Так структура может быть изменена впоследствии без необходимости радикально переделывать раму или заменять ткань."
+        description: "Overall, rather than developing fixture pieces, we decided to try a tensile structure held entirely by the fabric itself. So the rigid network of nodes and the rods between them could be designed and assembled separately and introduced between two layers of flexible fabric, leaving it open to change."
+      Esp:
+        description: "En conjunto, en lugar de desarrollar piezas de fijación, decidimos probar una estructura tensada sostenida por completo por la propia tela. Así, la red rígida de nodos y las varillas entre ellos podían diseñarse y montarse por separado e introducirse entre dos capas de tela flexible, dejándola abierta a cambios."
     element5:
       Eng-name:       "Code"
-      Rus-name:       "Скрипт"
+      Esp-name:       "Código"
       path:          "./_data/projects/project-4/img/thumb-05.jpg"
       link:          "/project-4-slides.html?slide=5"
       path-slide:    "./_data/projects/project-4/img/slide-05.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-05-small.jpg"
       Eng:
-        description: "As part of the project we developed Grasshopper Script in order to generate nodes with specific sleeve length for intersecting line segment of the designed network. Around 50 different main joints were 3D-printed over 28 hours and 20 minutes combined using collectively 198 grams of materials with just 21,78% wasted on supports (later script has decreased need in them drastically due to variable orientation adjustment) and ready for assembly."
-      Rus:
-        description: "Частью процесса стала разработка скрипта в Grasshopper для генерирования звеньев по линейным фрагментам спроектированной сети. Алгоритм подготовил для печати порядка 50 уникальных узлов. Печать заняла суммарно 28 часов и 20 минут, используя 198 грамм материалов тратя всего 21,78% на поддержки (последняя версия алгоритма значительно снизила необходимость в них в виде варьирующейся ориентации узлов)."
+        description: "As part of the project we developed a Grasshopper script to generate nodes with a specific sleeve length for each intersecting line segment of the designed network. Around 50 different main joints were 3D-printed, ready for assembly, in 28 hours and 20 minutes combined, using 198 grams of material in all, with just 21.78% wasted on supports (a later version of the script reduced the need for them drastically by adjusting each node's orientation)."
+      Esp:
+        description: "Como parte del proyecto desarrollamos un script de Grasshopper para generar nodos con una longitud de manguito específica para cada segmento de la red diseñada que se cruza en ellos. Se imprimieron en 3D unas 50 uniones principales distintas, listas para el montaje, en 28 horas y 20 minutos en total, con 198 gramos de material en conjunto y solo un 21,78% desperdiciado en soportes (una versión posterior del script redujo drásticamente su necesidad ajustando la orientación de cada nodo)."
     element6:
       Eng-name:       "Assembly"
-      Rus-name:       "Сборка"
+      Esp-name:       "Montaje"
       path:          "./_data/projects/project-4/img/thumb-06.jpg"
       link:          "/project-4-slides.html?slide=6"
       path-slide:    "./_data/projects/project-4/img/slide-06.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-06-small.jpg"
       Eng: # too long horizontal
-        description: "In order to literally match the design a labeling system was introduced whereby each node received unique name and each rod was named by the names of the rods it was connecting or with marking if the rods were a dead-end and could all be cut to computationally measured dimensions. Having bigger length of the sleeves proven to help since both rods and nodes were rigid and the network gained spatial strength as it got further assembled so little tolerance in length allowed easier assembly."
-      Rus: # too long horizontal
-        description: "Чтобы результат точно соответствовал дизайну, мы разработали систему ярлыков. Каждый узел получил уникальное имя, информирующие названия стержней, которые так же получали точно отмеренные по модели габариты для нарезки. Решение удлинить рукава элементов оказалось полезным, ибо и стержни и узлы, будучи жесткими элементами, быстро обретали жёсткость при сборке, и небольшая погрешность в длине помогала сборке."
+        description: "To match the design literally, a labelling system was introduced: each node received a unique name, and each rod was named after the nodes it connected, or marked as a dead end, so all of them could be cut to computationally measured lengths. Longer sleeves proved helpful: since both rods and nodes were rigid and the network gained spatial strength as more of it was assembled, a little tolerance in length made assembly easier."
+      Esp: # too long horizontal
+        description: "Para ajustarse literalmente al diseño, se introdujo un sistema de etiquetado: cada nodo recibió un nombre único y cada varilla se nombró según los nodos que unía, o se marcó como terminal, de modo que todas pudieran cortarse a longitudes medidas computacionalmente. Los manguitos más largos resultaron útiles: como varillas y nodos eran rígidos y la red ganaba resistencia espacial a medida que se montaba, un poco de tolerancia en la longitud facilitó el montaje."
     element7:
       Eng-name:       "Result"
-      Rus-name:       "Результат"
+      Esp-name:       "Resultado"
       path:          "./_data/projects/project-4/img/thumb-07.jpg"
       link:          "/project-4-slides.html?slide=7"
       path-slide:    "./_data/projects/project-4/img/slide-07.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-07-small.jpg"
       Eng:
-        description: "Not only was this a valuable experience as an introduction for the fabrication techniques. By this hands-on approach we got a practical feeling of workflow and design particularities one has to go through in a parametric and digitally fabricated design."
-      Rus:
-        description: "Этот опыт был крайне полезен не только с точки зрения освоения методов цифрового производства. Опробовав на себе подход от концепции до сборки, мы получили важный опыт для цифрового и параметрического дизайна в целом."
+        description: "This was a valuable experience as an introduction to fabrication techniques. Through this hands-on approach we got a practical feel for the workflow and the design particularities one has to go through in parametric, digitally fabricated design."
+      Esp:
+        description: "Fue una experiencia valiosa como introducción a las técnicas de fabricación. Con este enfoque práctico adquirimos una idea concreta del flujo de trabajo y de las particularidades de diseño por las que hay que pasar en un diseño paramétrico y fabricado digitalmente."
     element8:
       Eng-name:       "Application"
-      Rus-name:       "Применение"
+      Esp-name:       "Aplicación"
       path:          "./_data/projects/project-4/img/thumb-08.jpg"
       link:          "/project-4-slides.html?slide=8"
       path-slide:    "./_data/projects/project-4/img/slide-08.jpg"
       path-sm-slide: "./_data/projects/project-4/img/slide-08-small.jpg"
       Eng:
-        description: "The frame was introduced to the space. Most curious effects are created when one side is lit more than the other - creating peculiar game of shadows; at the same time having a non-translucent surface helps in daylight when many students are working simultaneously in the space. Additionally having preserved the fabric we managed also to save the pleasant tactile feel - with the rigid structure inside you can reach almost accidentally as if going in a thick fog."
-      Rus: # too long horizontal
-        description: "Разделитель был реализован и помещён в пространство. Наиболее уникальный эффект возникает, когда одна сторона освещена больше чем другая, создавая необычную игру теней. При этом, будучи непрозрачной, разделитель помогает в дневное время работать без отвлечения студентам по обеим сторонам. Более того, сохранив ткань целой, мы сохранили и приятный тактильный эффект, а жесткие структуры всплывают на поверхность как из плотного тумана."
+        description: "The frame was introduced to the space. The most curious effects appear when one side is lit more than the other, producing a peculiar play of shadows; at the same time, a non-translucent surface helps in daylight, when many students are working in the space at once. Having kept the fabric, we also kept its pleasant tactile feel: you reach the rigid structure inside almost by accident, as if walking into a thick fog."
+      Esp: # too long horizontal
+        description: "El marco se instaló en el espacio. Los efectos más curiosos aparecen cuando un lado está más iluminado que el otro, lo que produce un peculiar juego de sombras; al mismo tiempo, una superficie no translúcida ayuda con luz de día, cuando muchos estudiantes trabajan a la vez en el espacio. Al conservar la tela, conservamos también su agradable tacto: la estructura rígida del interior se alcanza casi por accidente, como al adentrarse en una niebla espesa."
 
 project-5:
   Eng-title:       "<strong>Uni-</strong><br>ver-<br>sarium"
-  Rus-title:       "<strong>Уни-</strong><br>вер-<br>сариум"
-  Eng-descript:    "Student<br>project<br>of science<br><strong>museum</strong>"
-  Rus-descript:    "Студенческий<br>проект<br><strong>музея<br></strong>науки"
+  Esp-title:       "<strong>Uni-</strong><br>ver-<br>sarium"
+  Eng-descript:    "Student<br>project<br>of science<br><strong>museum</strong><br><br>MArchI, 2015–16"
+  Esp-descript:    "Proyecto<br>de estudiante<br>de un<br><strong>museo</strong><br>de ciencia<br><br>MArchI, 2015–16"
   type:           "2"
   link:           "/project-5-slides.html?slide=1"
   overview:       "/project-5.html"
@@ -430,81 +430,81 @@ project-5:
   content:
     element1:
       Eng-name:       "Task"
-      Rus-name:       "Задача"
+      Esp-name:       "Encargo"
       path:          "./_data/projects/project-5/img/thumb-01.jpg"
       link:          "/project-5-slides.html?slide=1"
       path-slide:    "./_data/projects/project-5/img/slide-01.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-01-small.jpg"
       Eng:
-        description: "This was a studying project in a bachelor program in Moscow Architectural Institute. The task was to design a museum while the site and specialization are up to the student to find and develop."
-      Rus:
-        description: "Этот проект был выполнен в процессе учёбы на бакалавриате в Московском Архитектурном Институте. Задача была спроектировать музей, функционал и расположение были на усмотрение и разработку студента."
+        description: "This was a studio project in the bachelor's program at the Moscow Architectural Institute (MArchI), 2015–16. The task was to design a museum, with the site and specialization left to the student to find and develop."
+      Esp:
+        description: "Fue un proyecto de taller de la carrera en el Instituto de Arquitectura de Moscú (MArchI), 2015–16. El encargo era diseñar un museo, dejando que el estudiante encontrara y desarrollara el emplazamiento y la especialización."
     element2:
       Eng-name:       "Functions"
-      Rus-name:       "Функции"
+      Esp-name:       "Funciones"
       path:          "./_data/projects/project-5/img/thumb-02.jpg"
       link:          "/project-5-slides.html?slide=2"
       path-slide:    "./_data/projects/project-5/img/slide-02.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-02-small.jpg"
       Eng: # too long horizontal
-        description: "As opposed to common approach this project began not from site, but rather from the functional outline. Future museum was chosen to be dedicated to science and include functions related to four main pillars of science knowledge, education, experience and vision. Apart from public domain, the functionality grew to include satellite roles based on investigation of modern international practices as well as of needs of scientific educational community."
-      Rus: # too long horizontal
-        description: "В противовес привычному подходу, проект начался с разработки функции, а, не отталкиваясь от конкретного участка. Будущий музей было решено посвятить науки. Он должен был включать в себя функции вокруг 4 фундаментальных элементов: знания, образования, опыта и воображения. Помимо этого вокруг них стали закручиваться спутниковые общественные задачи, всплывшие в процессе изучения международных аналогов и климата научно-образовательского общества в Москве."
+        description: "Unlike the common approach, this project began not from a site but from a functional outline. The museum was to be dedicated to science and to include functions related to four main pillars of science: knowledge, education, experience and vision. Apart from the public domain, the program grew to include satellite roles, based on an investigation of modern international practice and of the needs of the scientific and educational community."
+      Esp: # too long horizontal
+        description: "A diferencia del enfoque habitual, este proyecto no partió de un emplazamiento sino de un esquema funcional. El museo estaría dedicado a la ciencia e incluiría funciones relacionadas con cuatro pilares principales de la ciencia: conocimiento, educación, experiencia y visión. Además del dominio público, el programa creció hasta incluir funciones satélite, a partir de un estudio de la práctica internacional actual y de las necesidades de la comunidad científica y educativa."
     element3:
       Eng-name:       "Site"
-      Rus-name:       "Участок"
+      Esp-name:       "Emplazamiento"
       path:          "./_data/projects/project-5/img/thumb-03.jpg"
       link:          "/project-5-slides.html?slide=3"
       path-slide:    "./_data/projects/project-5/img/slide-03.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-03-small.jpg"
       Eng: # too long horizontal
-        description: "Based on the scheme the site was singled out to be a part of Moscow's Children Extra-curriculum Studying Center. It is an impressive complex with roots in 60's. Generations of kids, myself included, grow up trying everything from sports to arts in there. The original complex proposal included other roles that at the time were considered extraneous and cancelled on construction. Based on this functional void and with respect to the existing master plan a place with extensive relief and on one of the main access points was selected."
-      Rus:
-        description: "Так базируясь на разработанной структуре, было выбрано включить музей в состав Дворца Пионеров на Воробьевых Горах. Этот значительный комплекс растёт корнями в 1960ые и первоначально включал больше объектов и ролей, которые при строительстве были сочтены лишними и отменены. Основывая на этой функциональной нише в мастер-плане, участком стал крутой склоне при одной из главных входных осей в комплекс."
+        description: "Based on that scheme, the site singled out was part of Moscow's children's centre for extracurricular studies, an impressive complex with roots in the 1960s. Generations of kids, myself included, grew up trying everything from sports to arts there. The complex's original proposal included other roles, which at the time were considered extraneous and cancelled during construction. Based on this functional void, and respecting the existing master plan, a place with pronounced relief, at one of the main access points, was selected."
+      Esp:
+        description: "A partir de ese esquema, el emplazamiento elegido formaba parte del centro infantil de actividades extraescolares de Moscú, un complejo impresionante con raíces en los años sesenta. Generaciones de niños, yo incluido, crecimos probando allí de todo, del deporte a las artes. La propuesta original del complejo incluía otras funciones que en su momento se consideraron superfluas y se cancelaron durante la construcción. A partir de ese vacío funcional, y respetando el plan director existente, se eligió un lugar con un relieve pronunciado, en uno de los accesos principales."
     element4:
       Eng-name:       "Volumetric search"
-      Rus-name:       "Поиски объёма"
+      Esp-name:       "Búsqueda volumétrica"
       path:          "./_data/projects/project-5/img/thumb-04.jpg"
       link:          "/project-5-slides.html?slide=4"
       path-slide:    "./_data/projects/project-5/img/slide-04.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-04-small.jpg"
       Eng: # too long horizontal
-        description: "The volumetric approach grew from the two described researched avenues. So respecting the relief the building gradually follows down creating terraces for the people to access the ravine gradually dissolving to the park. Based on four main components of public domain of functions, four corresponding transitional roles were singled out to take form of rising pillars, supporting more isolated research and administrative roles of the project preserving views and isolating workers."
-      Rus: # too long horizontal
-        description: "Объёмная структура в конечном итоге была основана на двух обозначенных направлениях исследования: функция и участок. Так основные помещения дублируют рельеф, постепенно спускаясь в овраг, сохраняя доступ посетителям к парковой зоне. План при этом пронизан четырьмя блоками, соответствующими выявленным функциональным группам. Блоки в свою очередь поддерживают административные и исследовательские помещения музея, сохраняя одновременно виды и изолируя работников."
+        description: "The volumetric approach grew from the two avenues of research described. Respecting the relief, the building steps down gradually, creating terraces for people to reach the ravine, gradually dissolving into the park. From the four main components of the public functions, four corresponding transitional roles were singled out to take the form of rising pillars, supporting the more isolated research and administrative parts of the project, preserving views and giving the staff privacy."
+      Esp: # too long horizontal
+        description: "El planteamiento volumétrico surgió de las dos líneas de investigación descritas. Respetando el relieve, el edificio desciende poco a poco, creando terrazas por las que la gente llega al barranco, y se disuelve gradualmente en el parque. A partir de los cuatro componentes principales de las funciones públicas, se definieron cuatro funciones de transición correspondientes que toman la forma de pilares ascendentes, que sostienen las partes de investigación y administración del proyecto, más aisladas, preservando las vistas y dando privacidad al personal."
     element5:
       Eng-name:       "Plans"
-      Rus-name:       "Планировка"
+      Esp-name:       "Plantas"
       path:          "./_data/projects/project-5/img/thumb-05.jpg"
       link:          "/project-5-slides.html?slide=5"
       path-slide:    "./_data/projects/project-5/img/slide-05.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-05-small.jpg"
       Eng:
-        description: "Public spaces where than divided up into gallery spaces and paths through were developed, carefully maintaining rough division of 4 themes but with clear linkage between them. Secondary pillar structures were than adapted to developed axis and became a blending element to transition to a more regular system of administrative functions on the top block."
-      Rus:
-        description: "Общественные пространства затем были разделены на галереи и пронизаны сквозными путями. При этом структура аккуратно сохраняла примерное деление на 4 тематических блока плавно перетекающих один в другой. Структура второстепенных блоков затем была разработка с задумкой создать переходный элемент к более регулярной планировке административного верхнего блока."
+        description: "The public spaces were then divided into galleries, and paths through them were developed, carefully keeping the rough division into four themes but with clear links between them. The secondary pillar structures were then adapted to the developed axes and became a blending element, transitioning to a more regular system of administrative functions in the top block."
+      Esp:
+        description: "Los espacios públicos se dividieron después en galerías, y se desarrollaron recorridos a través de ellas, manteniendo con cuidado la división aproximada en cuatro temas pero con vínculos claros entre ellos. Las estructuras secundarias de pilares se adaptaron después a los ejes desarrollados y se convirtieron en un elemento de transición hacia un sistema más regular de funciones administrativas en el bloque superior."
     element6:
       Eng-name:       "Renders"
-      Rus-name:       "Рендеры"
+      Esp-name:       "Renders"
       path:          "./_data/projects/project-5/img/thumb-06.jpg"
       link:          "/project-5-slides.html?slide=6"
       path-slide:    "./_data/projects/project-5/img/slide-06.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-06-small.jpg"
       Eng: # too long horizontal
-        description: "The resulting space utilized all the benefits such spatial system brings - variety of relative positions of galleries, unexpected vantage points, curious and shifting atmosphere through the building, etc. Moreover, given fast pace of scientific and technological development a modular and adaptive structural system was proposed to host structural support for broad variety of installations and could be potentially grown further down the hill."
-      Rus: # too long horizontal
-        description: "Созданная структура использует максимально потенциал участка: гибкое расположение галерейных помещений, непредсказуемые уникальные видовые точки, интригующая и изменяющаяся атмосфера здания в целом, и т.д. Более того, в виду скорости развития науки и технологий была предложена модульная система конструкций галерей, которая способна вместить дополнительную структурную поддержку экспонатов, будучи легко изменяемой и, потенциально расширяемой далее вниз по оврагу."
+        description: "The resulting space uses all the benefits such a spatial system brings: a variety of relative positions of galleries, unexpected vantage points, a curious and shifting atmosphere through the building, etc. Moreover, given the fast pace of scientific and technological development, a modular, adaptive structural system was proposed, to support a broad variety of installations; it could potentially be extended further down the hill."
+      Esp: # too long horizontal
+        description: "El espacio resultante aprovecha todas las ventajas que aporta un sistema espacial así: una variedad de posiciones relativas de las galerías, puntos de vista inesperados, una atmósfera curiosa y cambiante a lo largo del edificio, etc. Además, dado el rápido ritmo del desarrollo científico y tecnológico, se propuso un sistema estructural modular y adaptable, capaz de sostener una gran variedad de instalaciones, que podría ampliarse más abajo en la ladera."
     element7:
       Eng-name:       "Result"
-      Rus-name:       "Результат"
+      Esp-name:       "Resultado"
       path:          "./_data/projects/project-5/img/thumb-07.jpg"
       link:          "/project-5-slides.html?slide=7"
       path-slide:    "./_data/projects/project-5/img/slide-07.jpg"
       path-sm-slide: "./_data/projects/project-5/img/slide-07-small.jpg"
       Eng:
-        description: "The resulting building managed to simultaneously blend in to the nature and the urban context while hopefully providing a meaningful addition to the educational and research field of surrounding giants as well as creating a powerful and bright attraction point on its own."
-      Rus:
-        description: "В итоге, проект одновременно естественно вписан в уникальную природную среду и в городской контекст научно-образовательных гигантов вокруг, внося потенциально значимую лепту. При этом музей может стать ярким центром притяжения и сам по себе."
+        description: "The resulting building manages to blend into both the nature and the urban context, while hopefully providing a meaningful addition to the educational and research field of the giants around it, and creating a powerful, bright point of attraction of its own."
+      Esp:
+        description: "El edificio resultante consigue integrarse tanto en la naturaleza como en el contexto urbano, aportando, esperamos, algo significativo al ámbito educativo y de investigación de los gigantes que lo rodean, y creando un punto de atracción potente y luminoso por sí mismo."
 
 ################################################################################
 
@@ -559,7 +559,6 @@ project-5:
 #   # Eng-title:       "<br><strong></strong><br>"
 # project-14:
 #   Eng-title:       <strong>Multi-</strong><br>space
-#   Rus-title:       <strong>Мульти-</strong><br>пространство
 #   type:           "1"
 #   link:           "/project-1-slides.html?slide=1"
 #   overview:       "/project-1.html"
@@ -568,50 +567,38 @@ project-5:
 #   content:
 #     element1:
 #       Eng-name:       Name
-#       Rus-name:       Название
 #       path:          "./_data/projects/project-1/img/thumb.jpg"
 #       link:          "/project-1-slides.html"
 #       path-slide:    "./_data/projects/project-1/img/slide-01.jpg"
 #       Eng:
 #         description: "The picture shows the museum´s visitor´s perspective from rooftop platforms from the street level down following relief. Pillars support administrative and storage facilities on the top appear as reflective and seamless both from relief and street sides blending the two."
-#       Rus:
-#         description: "Данный рендер показывает учебный центр с точки зрения посетителя на промежуточной публичной крыше. Верхний уровень содержит фаблаб и коворкинг пространство. Связь верхнего и нижнего уровней сконцентрирована в узлы коммуникации, обеспечивая наиболее беспрепятсвенную среду с улицы."
 #     element2:
 #       Eng-name:       "Render"
-#       Rus-name:       "Рендер"
 #       path:          "./_data/projects/project-1/img/thumb.jpg"
 #       link:          "/project-1-slides.html?slide=2"
 #       path-slide:    "./_data/projects/project-1/img/slide-02.jpg"
 #       Eng:
 #         description: "Some trial text."
-#       Rus:
-#         description: "Рандомный текст."
 #     element3:
 #       Eng-name:    "Preview"
-#       Rus-name:    "Предпросмотр"
 #       path:       "./_data/projects/project-1/img/thumb.jpg"
 #     element4:
 #       Eng-name:    "interior"
-#       Rus-name:    "Интерьер"
 #       path:       "./_data/projects/project-1/img/thumb.jpg"
 #     element5:
 #       Eng-name:    "Analitics"
-#       Rus-name:    "Аналитика"
 #       path:       "./_data/projects/project-1/img/thumb.jpg"
 #     element6:
 #       Eng-name:    "Cuts"
-#       Rus-name:    "Разрез"
 #       path:       "./_data/projects/project-1/img/thumb.jpg"
 #     element7:
 #       Eng-name:    "Akso"
-#       Rus-name:    "Аксонометрия"
 #       path:       "./_data/projects/project-1/img/thumb.jpg"
 
 ################################################################################
 
 # project-5:
 #   Eng-title:       "<strong>Pro-<br>spect-<br></strong>ive parking"
-#   Rus-title:       "<strong>Пер-<br>спект-<br></strong>ивная парковка"
 #   type:           "6"
 #   link:           "/project-5.html"
 #   thumb-path:     "./_data/projects/project-5/img/thumb.jpg"
@@ -629,29 +616,22 @@ project-5:
 # content:
 #   element1:
 #     Eng-name:    "Name"
-#     Rus-name:    "Название"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"
 #   element2:
 #     Eng-name:    "Render"
-#     Rus-name:    "Рендер"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"
 #   element3:
 #     Eng-name:    "Preview"
-#     Rus-name:    "Предпросмотр"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"
 #   element4:
 #     Eng-name:    "interior"
-#     Rus-name:    "Интерьер"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"
 #   element5:
 #     Eng-name:    "Analitics"
-#     Rus-name:    "Аналитика"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"
 #   element6:
 #     Eng-name:    "Cuts"
-#     Rus-name:    "Разрез"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"
 #   element7:
 #     Eng-name:    "Akso"
-#     Rus-name:    "Аксонометрия"
 #     path:       "./_data/projects/project-2/img/thumb.jpg"

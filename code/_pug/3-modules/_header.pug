@@ -22,57 +22,40 @@ mixin header()
 					a.project-3-slides.is-hidden(href='/project-3-slides.html?lang=Eng') &nbsp/ Slides
 					a.project-4-slides.is-hidden(href='/project-4-slides.html?lang=Eng') &nbsp/ Slides
 					a.project-5-slides.is-hidden(href='/project-5-slides.html?lang=Eng') &nbsp/ Slides
-			div(class = "lang-section Rus")
+			div(class = "lang-section Esp")
 				.level1
-					a.home(href='/?lang=Rus') Главная
+					a.home(href='/?lang=Esp') Inicio
 				.level2
-					a.about.is-hidden(href='/about.html?lang=Rus') &nbsp/ Инфо
-					a.links.is-hidden(href='/links.html?lang=Rus') &nbsp/ Контакт
-					a.project-1.is-hidden(href='/project-1.html?lang=Rus') &nbsp/ Проект 1
-					a.project-2.is-hidden(href='/project-2.html?lang=Rus') &nbsp/ Проект 2
-					a.project-3.is-hidden(href='/project-3.html?lang=Rus') &nbsp/ Проект 3
-					a.project-4.is-hidden(href='/project-4.html?lang=Rus') &nbsp/ Проект 4
-					a.project-5.is-hidden(href='/project-5.html?lang=Rus') &nbsp/ Проект 5
+					a.about.is-hidden(href='/about.html?lang=Esp') &nbsp/ Sobre mí
+					a.links.is-hidden(href='/links.html?lang=Esp') &nbsp/ Enlaces
+					a.project-1.is-hidden(href='/project-1.html?lang=Esp') &nbsp/ Proyecto 1
+					a.project-2.is-hidden(href='/project-2.html?lang=Esp') &nbsp/ Proyecto 2
+					a.project-3.is-hidden(href='/project-3.html?lang=Esp') &nbsp/ Proyecto 3
+					a.project-4.is-hidden(href='/project-4.html?lang=Esp') &nbsp/ Proyecto 4
+					a.project-5.is-hidden(href='/project-5.html?lang=Esp') &nbsp/ Proyecto 5
 				.level3
-					a.project-1-slides.is-hidden(href='/project-1-slides.html?lang=Rus') &nbsp/ Слайды
-					a.project-2-slides.is-hidden(href='/project-2-slides.html?lang=Rus') &nbsp/ Слайды
-					a.project-3-slides.is-hidden(href='/project-3-slides.html?lang=Rus') &nbsp/ Слайды
-					a.project-4-slides.is-hidden(href='/project-4-slides.html?lang=Rus') &nbsp/ Слайды
-					a.project-5-slides.is-hidden(href='/project-5-slides.html?lang=Rus') &nbsp/ Слайды
+					a.project-1-slides.is-hidden(href='/project-1-slides.html?lang=Esp') &nbsp/ Diapositivas
+					a.project-2-slides.is-hidden(href='/project-2-slides.html?lang=Esp') &nbsp/ Diapositivas
+					a.project-3-slides.is-hidden(href='/project-3-slides.html?lang=Esp') &nbsp/ Diapositivas
+					a.project-4-slides.is-hidden(href='/project-4-slides.html?lang=Esp') &nbsp/ Diapositivas
+					a.project-5-slides.is-hidden(href='/project-5-slides.html?lang=Esp') &nbsp/ Diapositivas
 		div.page-title-element.menu.hidden
 			img.menuBackground(src='/_data/general/menu_BG.png')
 			div.menuEntry
 				div(class = "lang-section Eng")
 					a(href='/about.html?lang=Eng') About
-				div(class = "lang-section Rus")
-					a(href='/about.html?lang=Rus') Инфо
+				div(class = "lang-section Esp")
+					a(href='/about.html?lang=Esp') Sobre mí
 			hr
 			div.menuEntry
 				div(class = "lang-section Eng")
 					a(href='/links.html?lang=Eng') Links
-				div(class = "lang-section Rus")
-					a(href='/links.html?lang=Rus') Контакт
+				div(class = "lang-section Esp")
+					a(href='/links.html?lang=Esp') Enlaces
 			hr
 			div.menuEntry.lang
 				.lang-element-holder
 					.lang-element.Eng.active Eng
 					|  / 
-					.lang-element.Rus Rus
+					.lang-element.Esp Esp
 
-	//-
-		.page-title
-			span.page-title-element.about
-				div(class = "lang-section "+lang+" "+active)
-					a.about(href='/about.html') Me
-				div(class = "lang-section "+lang+" "+active)
-					a.about(href='/about.html') Me
-			span.page-title-element.title
-				.level1
-					a(href='/') Home
-				.level2
-					a.about.is-hidden(href='/about.html')  / About+Contact
-					a.project-1.is-hidden(href='/project-1.html')  / ProjectContact
-			span.page-title-element.lang
-				.lang-element.active Eng
-				|  /
-				.lang-element Rus

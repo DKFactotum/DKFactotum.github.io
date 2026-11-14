@@ -10,6 +10,8 @@ const pug          = require('gulp-pug');
 const prefix       = require('gulp-autoprefixer');
 const cssnano      = require('gulp-cssnano');
 const uglify       = require('gulp-uglify');
+const fs           = require('fs');
+const yaml         = require('js-yaml');
 
 const pugFiles_s   = './code/_pug/4-pages/*.pug';
 const pugFiles_ws  = './code/_pug/**/*.pug';
@@ -20,6 +22,13 @@ const cssFiles_s   = './code/_scss/*.scss';
 const cssFiles_o   = 'code/css';
 const jsFiles_s    = './code/_js/*.js';
 const jsFiles_o    = 'code/js';
+const linksData    = '_data/general/links.yml';
+
+// The links page draws one node per `linkN` entry; Pug needs the count when it compiles.
+function pugLocals() {
+  const links = yaml.load(fs.readFileSync(linksData, 'utf8'));
+  return { linkCount: Object.keys(links).filter(k => /^link\d+$/.test(k)).length };
+}
 
 const browserVersions = ['last 15 versions', '> 1%', 'ie 8'];
 
@@ -41,7 +50,7 @@ gulp.task('scripts-prod', function () {
 
 gulp.task('pug-prod', function () {
   return gulp.src(pugFiles_s)
-    .pipe(pug())
+    .pipe(pug({ locals: pugLocals() }))
     .pipe(gulp.dest('./'+pugFiles_o));
 });
 
@@ -52,7 +61,7 @@ gulp.task('build', gulp.parallel('scripts-prod', 'sass-prod', 'pug-prod'));
 gulp.task('watch', gulp.series('build', function watching() {
   gulp.watch(sassFiles_ws, gulp.series('sass-prod'));
   gulp.watch(jsFiles_s, gulp.series('scripts-prod'));
-  gulp.watch(pugFiles_ws, gulp.series('pug-prod'));
+  gulp.watch([pugFiles_ws, linksData], gulp.series('pug-prod'));
 }));
 
 gulp.task('default', gulp.series('build'));

@@ -62,7 +62,6 @@ Text:
 #DONE? - replace me to Name - repeat and remember
 #DONE- CV: ML workshop month error
 #DONE- CV: nationality -> residence and citizenship
-- readability: �������� �� ��������������� ��������� ������...
 - timetable: results: rus shorten
 - mom museum text in mail
 

@@ -41,6 +41,7 @@ function watchLanguage() {
 function resetLanguage() {
   var lang = getUrlParameter('lang');
 
-  if (lang == "Rus")                            { $('.lang-element.Rus').click(); }
-  else if ((lang == "Eng") || (lang == "Null")) { $('.lang-element.Eng').click(); };
+  // English and Spanish; anything else, an old ?lang=Rus link included, lands in English.
+  if (lang == "Esp") { $('.lang-element.Esp').click(); }
+  else               { $('.lang-element.Eng').click(); };
 };

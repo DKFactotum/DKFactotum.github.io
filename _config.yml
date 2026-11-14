@@ -1,9 +1,9 @@
 # Site settings
-title:                 Daniil Portfolio
-email:                 daniil.koshelyuk@gmail.com
+title:                 Daniil Koshelyuk
+email:                 daniil@polytope.solutions
 description:           >
-  This is a personal portfolio site of architect, designer and programmer
-  Daniil Koshelyuk. I hope you will find it informative and of use.
+  Daniil Koshelyuk's student work in architecture, at MArchI and IAAC,
+  2015-2018. Current work: Polytope Solutions, www.polytope.solutions.
 # baseurl:             "daniil.koshelyuk.site" # the subpath of your site, e.g. /blog
 url:                   daniil.koshelyuk.site # the base hostname & protocol for your site
 
