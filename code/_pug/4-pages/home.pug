@@ -5,28 +5,23 @@ include ../3-modules/_footer
 //- The landing: who works how, the way to polytope for work, and the way into the site.
 //- The tile matrix it used to be is projects.pug.
 mixin lang-section-landing(lang)
-	- var projectsLabel = lang == 'Esp' ? 'Proyectos' : 'Projects'
+	- var projectsLabel = lang == 'Esp' ? 'Proyectos de estudiante' : 'Student projects'
 	- var aboutLabel = lang == 'Esp' ? 'Sobre mí' : 'About'
 	- var linksLabel = lang == 'Esp' ? 'Enlaces' : 'Links'
 	section#landing(class = "lang-section "+lang)
 		.landing-content
 			p.landing-lead.nonCapitalized
 				+pull-a(lang+".landing-lead")
-			a.landing-work(href='https://www.polytope.solutions')
+			a.landing-work(href='https://www.polytope.solutions/?lang='+lang)
 				+pull-a(lang+".landing-work")
 			.landing-more
-				a.landing-projects(href='/projects.html?lang='+lang)
-					strong= projectsLabel
-					em.landing-note
-						+pull-a(lang+".landing-projects")
-				.landing-small
-					a(href='/about.html?lang='+lang)= aboutLabel
-					|  · 
-					a(href='/links.html?lang='+lang)= linksLabel
+				a(href='/about.html?lang='+lang)= aboutLabel
+				|  · 
+				a(href='/projects.html?lang='+lang)= projectsLabel
+				|  · 
+				a(href='/links.html?lang='+lang)= linksLabel
 
 .page-wrapper.load
-	+background-info('Eng')
-	+background-info('Esp')
 	.content-wrapper.load#landing
 		+header
 		+lang-section-landing('Eng')

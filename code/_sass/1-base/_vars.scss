@@ -40,7 +40,14 @@ $outline-position-13: 350px;
 $outline-position-14: $outline-position-13 + $difference;
 $outline-position-15: $outline-position-13 + 2*$difference;
 
-$animation-speed:     500ms;
+$animation-speed:     250ms;
+// Page transitions (S107): in fast and settling, out the same curve reversed, and shorter.
+$open-speed:          250ms;
+$close-speed:         150ms;
+$ease-open:           cubic-bezier(0.16, 1, 0.3, 1);
+$ease-close:          cubic-bezier(0.7, 0, 0.84, 0);
+// The grey around a white card (About, Links): half as dark as the 2019 one.
+$card-shadow-color:   mix($background-color, lighten($base-text-color, 75), 50%);
 
 $on-palm:          500px;
 $on-tablet:        650px;

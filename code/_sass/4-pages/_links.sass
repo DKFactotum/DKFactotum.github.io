@@ -1,6 +1,7 @@
 section#links
     .wrapper
         position: absolute
+        +card
         width: 100%
         height: 75vh
         padding-bottom: 5vh
@@ -20,7 +21,7 @@ section#links
                 display: block
                 width: 96%
                 padding-bottom: auto
-                margin-top: 0vh
+                margin-top: 2.5vh
                 margin-left: 2%
                 margin-right: 2%
                 margin-bottom: 2%
@@ -126,6 +127,11 @@ section#links
                             &:hover
                                 transform: scale(1.1)
 
+                            &.pulse-up
+                                animation: linkPulseUp 900ms $ease-open both
+                            &.pulse-down
+                                animation: linkPulseDown 900ms $ease-open both
+
 
                 .visualLink
                     z-index: 0
@@ -137,3 +143,23 @@ section#links
 
 .hidden
     display: none
+
+// A small swell or shrink, overshooting once and settling (S107).
+@keyframes linkPulseUp
+    0%
+        scale: 1
+    35%
+        scale: 1.08
+    65%
+        scale: 0.98
+    100%
+        scale: 1
+@keyframes linkPulseDown
+    0%
+        scale: 1
+    35%
+        scale: 0.93
+    65%
+        scale: 1.02
+    100%
+        scale: 1

@@ -3,7 +3,7 @@ include ../3-modules/_header
 include ../3-modules/_footer
 
 mixin lang-section-about(lang)
-	section#about(class = "lang-section "+lang)
+	section#about(class = "lang-section "+lang, lang = (lang == "Esp" ? "es" : "en"))
 		.wrapper
 			.about-content
 				.about-element.about-intro
@@ -12,13 +12,13 @@ mixin lang-section-about(lang)
 					.about-av
 						img(src = "/_data/general/avatar.jpg", alt = "Daniil Koshelyuk")
 					br
-					p.nonCapitalized
+					p.nonCapitalized.justified
 						+pull-a(lang+".paragraph")
 				.about-element
-					p.nonCapitalized
+					p.nonCapitalized.justified
 						+pull-a(lang+".extras")
 				.about-element.about-invitations
-					p.nonCapitalized
+					p.nonCapitalized.centered
 						+pull-a(lang+".contact-intro")
 					a.link(href='mailto:{{ site.email }}') {{ site.email }}
 

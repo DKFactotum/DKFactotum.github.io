@@ -1,41 +1,36 @@
 const TWOPI = 2 * 3.14159265;
 var langDict = [];
-var currentAngle = 0;
-var angleUpdateTime = 5;
-var targetAngleSpeed = 0.00125;
-var angleSpeed = 0.000125;
-var rotating = true;
+// The tree stands still (S107: the rotation went); nodes now and then swell or shrink a
+// little and settle, one at a time.
+var layoutAngle = 0.65;      // Art's branch, the longest, points into the lower-right corner
+var pulseEvery = 1400;
 var startStep = 7.5;
 var minStep = 7.5;
 var maxStep = 12;
 var stepChange = 1.125;
 
-////////////////////////////////////////////////////////////////////////////////
-//////////////////////Preparation functions/////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 $( window ).on("load", function() {
     OrganizeLinks();
-    setInterval(UpdateLinks, angleUpdateTime);
+    LayoutLinks();
+    $(window).on("resize", LayoutLinks);
+    // A hidden language section has no size; lay it out again once it is shown.
+    $('.lang-element').on("click", function(){ setTimeout(LayoutLinks, 0); });
+    setInterval(PulseLink, pulseEvery);
 });
 
-////////////////////////////////////////////////////////////////////////////////
-function UpdateLinks(){
-    if (langDict.length > 0 && rotating){
-        if (angleSpeed < targetAngleSpeed)
-            angleSpeed += targetAngleSpeed/250.0;
-        currentAngle += angleSpeed;
-        if (currentAngle > TWOPI)
-            currentAngle -= TWOPI;
-        for(var index in langDict){
-            AdjustItems(langDict[index], startStep, TWOPI, currentAngle, 0, 0);
-        }
+function LayoutLinks(){
+    for(var index in langDict){
+        AdjustItems(langDict[index], startStep, TWOPI, layoutAngle, 0, 0);
     }
 }
-function ToggleRotation(){
-    rotating = !rotating;
-    if (!rotating){
-        angleSpeed = 0;
-    }
+function PulseLink(){
+    var items = $("section.lang-section.lang-active .linkItem a");
+    if (items.length == 0) return;
+    var item = items.eq(Math.floor(Math.random() * items.length));
+    var kind = Math.random() < 0.6 ? "pulse-up" : "pulse-down";
+    item.removeClass("pulse-up pulse-down");
+    void item[0].offsetWidth;   // restart the animation if it was the last one picked
+    item.addClass(kind);
 }
 
 function OrganizeLinks(){
@@ -50,7 +45,6 @@ function OrganizeLinks(){
       var dict = []
       links.each(function(j) {
         var item = links.eq(j);
-        item.hover(ToggleRotation);
         var dataHolder = item.find(".dataHolder");
         var itemName = dataHolder.find(".name").text();
         var parentName = dataHolder.find(".parent").text();

@@ -30,16 +30,16 @@ body
   .content-wrapper.load
     opacity: 0
   .content-wrapper.loading
-    animation: loadContentAnimation 500ms cubic-bezier(0.21, 0, 0.11, 1) both
+    animation: loadContentAnimation $open-speed $ease-open both
   .content-wrapper.unloading
-    animation: unloadContentAnimation 500ms cubic-bezier(0.89, 0, 0.79, 1) both
+    animation: unloadContentAnimation $close-speed $ease-close both
 
 .page-wrapper.load
   transform: perspective(500px) translateZ($depth)
 .page-wrapper.loading
-  animation: loadAnimation 500ms cubic-bezier(0.21, 0, 0.11, 1) both
+  animation: loadAnimation $open-speed $ease-open both
 .page-wrapper.unloading
-  animation: unloadAnimation 500ms cubic-bezier(0.89, 0, 0.79, 1) both
+  animation: unloadAnimation $close-speed $ease-close both
 @keyframes loadAnimation
   0%
     transform: perspective(500px) translateZ($depth)
@@ -112,11 +112,11 @@ body
       background: rgba($base-text-color, 0)
 
     &.element1
-      animation: loaderAnimation1 5000ms cubic-bezier(0.21, 0, 0.11, 1) infinite
+      animation: loaderAnimation1 2500ms $ease-open infinite
     &.element2
-      animation: loaderAnimation2 5000ms cubic-bezier(0.21, 0, 0.11, 1) infinite
+      animation: loaderAnimation2 2500ms $ease-open infinite
     &.element3
-      animation: loaderAnimation3 5000ms cubic-bezier(0.21, 0, 0.11, 1) infinite
+      animation: loaderAnimation3 2500ms $ease-open infinite
 
 @keyframes loaderAnimation1
   0%, 40%, 80%

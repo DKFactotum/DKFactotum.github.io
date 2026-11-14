@@ -15,9 +15,9 @@ $( window ).on("beforeunload", function() {
 });
 function watchTime(){
   setInterval(checkDOMChange, 100);
-  setTimeout(hideFooter, 5000);
-  setTimeout(hideLoader, 3000);
-  setTimeout(loadContent, 3000);
+  setTimeout(hideFooter, 2500);
+  setTimeout(hideLoader, 1500);
+  setTimeout(loadContent, 1500);
 }
 function watchMenu(){
     var menuButtons = $('.menuButton');
@@ -107,5 +107,5 @@ function unloadContent() {
   totalObject.removeClass("loading").addClass("unloading");
   // Delay.
   var start = +new Date;
-  while ((+new Date - start) < 500);
+  while ((+new Date - start) < 150);   // $close-speed
 };

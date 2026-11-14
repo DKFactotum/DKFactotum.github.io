@@ -40,7 +40,7 @@ link5:
   url: "https://www.researchgate.net/profile/Daniil-Koshelyuk"
   title:
     Eng: "Research"
-    Esp: "Investigación"
+    Esp: "Artículos"
 link6:
   parent: link0
   interactable: false
@@ -58,22 +58,15 @@ link8:
   interactable: true
   url: "https://www.instagram.com/factotum.photo/"
   title:
-    Eng: "Arch Photo"
-    Esp: "Foto arq."
+    Eng: "Photo"
+    Esp: "Foto"
 link9:
   parent: link7
   interactable: true
   url: "https://www.instagram.com/factotum.digital/"
   title:
-    Eng: "Digital Art"
-    Esp: "Arte digital"
-link10:
-  parent: link6
-  interactable: true
-  url: "https://www.pinterest.es/dkfactotum/"
-  title:
-    Eng: "Pins"
-    Esp: "Pins"
+    Eng: "Digital"
+    Esp: "Digital"
 link11:
   parent: link0
   interactable: false
@@ -100,7 +93,7 @@ link14:
   title:
     Eng: "HoloFab"
     Esp: "HoloFab"
-link15:
+link10:
   parent: link4
   interactable: true
   url: "https://blog.iaac.net/faculty/daniil-koshelyuk/"

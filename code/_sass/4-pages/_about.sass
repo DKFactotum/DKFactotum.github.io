@@ -17,9 +17,7 @@ section#about
     display: block
   .wrapper
     position: absolute
-    background: $background-color
-    // color: $base-text-color
-    box-shadow: 0 0 30vmin 15vmin lighten($base-text-color,75)
+    +card
 
     .about-content
       position: absolute
@@ -74,6 +72,13 @@ section#about
 
   a
     color: $anchor-color
+
+  p.justified
+    text-align: justify
+    hyphens: auto
+    -webkit-hyphens: auto
+  p.centered
+    text-align: center
 
   ul
     list-style-type: none

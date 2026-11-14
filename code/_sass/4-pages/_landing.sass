@@ -19,8 +19,10 @@ section#landing
 
     .landing-lead
       font-size: $med-about-font-size
-      line-height: 1.35
+      line-height: 1.45
       margin: 0 0 6vh 0
+      strong
+        font-weight: 800
 
     .landing-work
       display: inline-block
@@ -31,34 +33,18 @@ section#landing
       font-size: $big-font-size
       text-transform: uppercase
       letter-spacing: 0.04em
-      transition: background $animation-speed, color $animation-speed
+      transition: background $animation-speed $ease-open, color $animation-speed $ease-open
       &:hover
         background: $base-text-color
         color: $background-color
 
     .landing-more
-      margin-top: 7vh
-      font-size: $base-about-font-size
-      line-height: 1.6
-
+      margin-top: 6vh
+      font-size: $base-font-size
+      text-transform: uppercase
+      color: $anchor-color
       a
         color: $base-text-color
         text-decoration: none
         &:hover
           color: $anchor-color
-
-      .landing-projects
-        display: block
-        text-transform: uppercase
-        strong
-          margin-right: 0.6em
-        .landing-note
-          font-style: normal
-          text-transform: none
-          color: $anchor-color
-
-      .landing-small
-        margin-top: 1.5vh
-        color: $anchor-color
-        text-transform: uppercase
-        font-size: $base-font-size

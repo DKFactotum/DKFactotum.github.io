@@ -21,6 +21,10 @@
         @content;
     }
 }
+@mixin card() {
+    background: $background-color;
+    box-shadow: 0 0 30vmin 15vmin $card-shadow-color;
+}
 @mixin animation() {
     transition: all $animation-speed cubic-bezier(0.56,-0.07, 0.68, 1.23);
 }
