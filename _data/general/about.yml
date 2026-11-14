@@ -1,5 +1,5 @@
 Eng:
-  landing-lead:     "Daniil Koshelyuk works through<br><strong>Polytope Solutions</strong><br>a practice building<br>real-time 3D and XR<br>making tools that connect<br>teaching others to be curious."
+  landing-lead:     "Daniil Koshelyuk<br>works through<br><strong>Polytope Solutions</strong><br>a practice building<br>real-time 3D and XR<br>making tools that connect<br>showing others how to do so too"
   landing-work:     "Let's work together"
   intro:            "My name is <strong>Daniil Koshelyuk</strong>."
   paragraph:        "I am a real-time 3D and XR developer and educator, an architect by education with a background in programming. Since 2019 I have worked as a freelancer, now through <strong>Polytope Solutions</strong>, building Unity applications for startups and EU-funded research, mostly as the sole developer, from prototype to store release on iOS, Android, WebGL and immersive headsets: custom rendering and compute shaders, live geospatial data, multiplayer, native and web integration, and the headless services behind them. I also build tools that connect design software to devices, among them an open-source Grasshopper-to-AR platform."
@@ -10,7 +10,7 @@ Eng:
   name:             "<strong>Daniil</strong><br>Koshelyuk"
   oneliner:         "implementing<br><strong>technologies</strong><br>in <strong>architecture</strong><br>investigating<br>and operating<br><strong>complex<br>systems</strong>"
 Esp:
-  landing-lead:     "Daniil Koshelyuk trabaja a través de<br><strong>Polytope Solutions</strong><br>una práctica que desarrolla<br>3D en tiempo real y XR<br>crea herramientas que conectan<br>y enseña a otros a ser curiosos."
+  landing-lead:     "Daniil Koshelyuk<br>trabaja a través de<br><strong>Polytope Solutions</strong><br>una práctica que desarrolla<br>3D en tiempo real y XR<br>crea herramientas que conectan<br>y enseña a otros a hacerlo también"
   landing-work:     "Trabajemos juntos"
   intro:            "Me llamo <strong>Daniil Koshelyuk</strong>."
   paragraph:        "Soy desarrollador de 3D en tiempo real y XR y docente, arquitecto de formación con base en programación. Desde 2019 trabajo como freelance, hoy a través de <strong>Polytope Solutions</strong>, desarrollando aplicaciones Unity para startups e investigación europea, casi siempre como único desarrollador, del prototipo a la publicación en tiendas en iOS, Android, WebGL y visores inmersivos: render a medida y compute shaders, datos geoespaciales en vivo, multijugador, integración nativa y web, y sus servicios headless. También desarrollo herramientas que conectan el software de diseño con los dispositivos, entre ellas una plataforma de código abierto de Grasshopper a AR."
