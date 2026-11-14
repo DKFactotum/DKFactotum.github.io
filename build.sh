@@ -4,7 +4,8 @@
 #   ./build.sh          compile the sources (Node) and build _site/ (Jekyll)
 #   ./build.sh compile  compile only: _includes/, code/css, code/js
 #   ./build.sh serve    compile, then serve _site/ on http://localhost:4000,
-#                       rebuilding on change (sources and Jekyll both)
+#                       rebuilding on change (sources and Jekyll both);
+#                       PORT=4001 ./build.sh serve if 4000 is taken
 #
 # The compiled outputs are committed: GitHub Pages runs its own Jekyll on
 # master and has no Node, so commit them after every source change.
@@ -14,6 +15,7 @@ cd "$(dirname "$0")"
 NODE_IMAGE=node:16-bookworm      # what package-lock.json was resolved with
 RUBY_IMAGE=ruby:3.3-bookworm     # the github-pages gem pins Jekyll to what Pages runs
 USER_ID="$(id -u):$(id -g)"
+PORT="${PORT:-4000}"
 
 node_run() {
   docker run --rm -u "$USER_ID" -e HOME=/tmp -v "$PWD":/site -w /site "$@"
@@ -45,7 +47,7 @@ case "${1:-build}" in
     compile; gems
     node_run -d --name personal-web-watch "$NODE_IMAGE" npx gulp watch >/dev/null
     trap 'docker rm -f personal-web-watch >/dev/null 2>&1' EXIT INT TERM
-    ruby_run -p 4000:4000 "$RUBY_IMAGE" bundle exec jekyll serve --host 0.0.0.0 --port 4000 ;;
+    ruby_run -p "127.0.0.1:$PORT:4000" "$RUBY_IMAGE" bundle exec jekyll serve --host 0.0.0.0 --port 4000 ;;
   *)
     echo "usage: $0 [build|compile|serve]" >&2; exit 2 ;;
 esac

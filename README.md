@@ -11,7 +11,7 @@ Needs Docker and nothing else; Node and Ruby run in containers.
 ```sh
 ./build.sh          # compile the sources and build _site/
 ./build.sh compile  # compile only — then commit _includes/, code/css, code/js
-./build.sh serve    # compile, then serve on http://localhost:4000 and rebuild on change
+./build.sh serve    # compile, then serve on http://localhost:4000 and rebuild on change (PORT=… to move it)
 ```
 
 Node is 16, what `package-lock.json` was resolved with. Jekyll is the `github-pages` gem's, so the local build is the one Pages runs.
