@@ -13,6 +13,17 @@ $( window ).on("load", function() {
 $( window ).on("beforeunload", function() {
   unloadContent();
 });
+// Back and forward restore a page from the browser's cache as it was left: mid-exit and
+// invisible, and without a load event. Play the entrance again instead (S107).
+$( window ).on("pageshow", function(event) {
+  if (event.originalEvent && event.originalEvent.persisted) {
+    $( ".menu" ).addClass("hidden");
+    var wrappers = $( ".content-wrapper, .page-wrapper" );
+    wrappers.removeClass("unloading loading load");
+    void document.body.offsetWidth;   // so "loading" starts its animation afresh
+    wrappers.addClass("loading");
+  }
+});
 function watchTime(){
   setInterval(checkDOMChange, 100);
   setTimeout(hideFooter, 2500);
