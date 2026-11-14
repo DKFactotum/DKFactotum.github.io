@@ -25,6 +25,11 @@ exclude:               [
   "package.json",
   "package-lock.json",
   "README.md",
+  "Gemfile",
+  "Gemfile.lock",
+  "build.sh",
+  "_todo.txt",
+  "vendor",
   "_data/**/*.yml"
 ]
 

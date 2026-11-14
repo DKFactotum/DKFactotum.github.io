@@ -1,29 +1,21 @@
-Hello Everybody!
+# daniil.koshelyuk.site
 
-This is a personal web page about my previous works in Architecture and Creative Coding. Site itself can be considered a project since it was done by myself from scratch.
+The person page of Daniil Koshelyuk: student work in architecture, 2015–2018. Current work is at [Polytope Solutions](https://www.polytope.solutions).
 
-The page implemented using Jekyll. Development powered with Gulp for Browser-sync and deployment features.
-Site is statically hosted on Github Pages. Built version can be found here: [my site](https://daniil.koshelyuk.site)
+Structure is written in Pug and styles in Sass (`code/`); gulp compiles them into `_includes/`, `code/css` and `code/js`, which carry Liquid. GitHub Pages builds `master` with its own Jekyll and fills that Liquid from `_data/`. Pages has no Node, so **the compiled outputs are committed**.
 
-Please contact me if you want to use any content at [this email](mailto:daniil.koshelyuk@gmail.com).  
+## Building
 
-<!-- TODO: Cleanse instructions
-New computer development system install:
-1.  install ruby
-2.  install nodejs
-3.  gem install jekyll
-4.  gem update
-5.  gem cleanup
-6.  npm install --global gulp-cli
-7.  npm install --global gulp
-8.  (if no node_modules) npm install
+Needs Docker and nothing else; Node and Ruby run in containers.
 
-updating packages:
-npm install npm@latest -g
-npm outdated
-npm update -g
+```sh
+./build.sh          # compile the sources and build _site/
+./build.sh compile  # compile only — then commit _includes/, code/css, code/js
+./build.sh serve    # compile, then serve on http://localhost:4000 and rebuild on change
+```
 
-For github pages:
-npm install --global gulp-cli
-npm install
- -->
+Node is 16, what `package-lock.json` was resolved with. Jekyll is the `github-pages` gem's, so the local build is the one Pages runs.
+
+## Content
+
+Copy lives in `_data/general/*.yml` and `_data/projects/project_list.yml`, in English (`Eng`) and Spanish (`Esp`). For work, or to use any of the content, write to [daniil@polytope.solutions](mailto:daniil@polytope.solutions).
